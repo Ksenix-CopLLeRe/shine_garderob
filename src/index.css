@@ -7,6 +7,13 @@ body,
   height: 100%;
 }
 
+body {
+  margin: 0;
+  background: #040404;
+  overscroll-behavior: none;
+  -webkit-text-size-adjust: 100%;
+}
+
 button {
   -webkit-tap-highlight-color: transparent;
   transition: opacity 140ms ease, background-color 140ms ease, border-color 140ms ease, transform 140ms ease;
