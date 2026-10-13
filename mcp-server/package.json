@@ -1,0 +1,35 @@
+{
+  "name": "shine-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server exposing the Shine wardrobe to AI assistants",
+  "type": "module",
+  "bin": {
+    "shine-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx src/index.ts",
+    "api": "node dist/http/main.js",
+    "api:dev": "tsx watch src/http/main.ts",
+    "seed": "tsx src/storage/seed.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "better-sqlite3": "^13.0.3",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

@@ -25,6 +25,7 @@ This is the canonical project structure. Start with task-relevant files below. O
 - `src/components/icons.tsx` - Inline SVG icon set (`I.Home`, `I.Check`, …)
 - `src/constants/images.ts` - Unsplash placeholder images
 - `src/data/` - Mock data (wardrobe, outfits, situations, styles). Replace with real data sources/MCP here
+- `mcp-server/` - Separate Node package: MCP server exposing the wardrobe (tools, SQLite storage) to AI assistants. See `mcp-server/README.md`
 - `src/index.css` - Global CSS entrypoint and Tailwind CSS v4 import
 - `index.html` - Vite HTML shell containing the `#root` element and mobile meta tags
 - `package.json` - Project dependencies and the Vite build, development, preview, and formatting scripts

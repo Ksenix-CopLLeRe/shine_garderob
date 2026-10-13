@@ -1,4 +1,5 @@
 import { useApp } from "@/app/AppContext";
+import { useSavedOutfits } from "@/api/useShineData";
 import { IMGS } from "@/constants/images";
 import { I } from "@/components/icons";
 import Caption from "@/components/ui/Caption";
@@ -10,6 +11,18 @@ import BottomNav from "@/components/layout/BottomNav";
 
 export default function HomeScreen({ name }: { name: string }) {
   const ctx = useApp();
+  const { data: outfits, source } = useSavedOutfits();
+  // Latest saved outfit from the API; the mock card stays when the API is unreachable.
+  const latest =
+    source === "api"
+      ? outfits?.[0]
+      : {
+          id: undefined,
+          n: "Дождливый вторник",
+          s: "Учёба · 12° · сегодня",
+          d: "",
+          img: IMGS.editorialBlazer,
+        };
   return (
     <div
       style={{
@@ -152,50 +165,52 @@ export default function HomeScreen({ name }: { name: string }) {
               Все <I.ChevronRight />
             </button>
           </div>
-          <button
-            onClick={() => ctx.go("outfit-detail")}
-            style={{
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              gap: 12,
-              padding: 0,
-              background: "transparent",
-              border: "none",
-              textAlign: "left",
-              cursor: "pointer",
-            }}
-          >
-            <Img
-              src={IMGS.editorialBlazer}
-              alt="Дождливый вторник"
-              style={{ width: 78, height: 94 }}
-            />
-            <div style={{ flex: 1 }}>
-              <div
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: 18,
-                  color: "#F3F0E9",
-                  marginBottom: 4,
-                }}
-              >
-                Дождливый вторник
+          {latest && (
+            <button
+              onClick={() => ctx.go("outfit-detail", latest.id)}
+              style={{
+                width: "100%",
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
+                padding: 0,
+                background: "transparent",
+                border: "none",
+                textAlign: "left",
+                cursor: "pointer",
+              }}
+            >
+              <Img
+                src={latest.img}
+                alt={latest.n}
+                style={{ width: 78, height: 94 }}
+              />
+              <div style={{ flex: 1 }}>
+                <div
+                  style={{
+                    fontFamily: "'Playfair Display', serif",
+                    fontSize: 18,
+                    color: "#F3F0E9",
+                    marginBottom: 4,
+                  }}
+                >
+                  {latest.n}
+                </div>
+                <div
+                  style={{
+                    fontFamily: "'DM Sans', sans-serif",
+                    fontSize: 12,
+                    color: "#8A8680",
+                  }}
+                >
+                  {latest.d ? `${latest.s} · ${latest.d}` : latest.s}
+                </div>
               </div>
-              <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 12,
-                  color: "#8A8680",
-                }}
-              >
-                Учёба · 12° · сегодня
+              <div style={{ color: "#8A8680" }}>
+                <I.ChevronRight />
               </div>
-            </div>
-            <div style={{ color: "#8A8680" }}>
-              <I.ChevronRight />
-            </div>
-          </button>
+            </button>
+          )}
         </section>
       </div>
       <BottomNav active="home" />
