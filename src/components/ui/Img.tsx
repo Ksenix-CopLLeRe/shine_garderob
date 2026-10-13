@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Img({
   src,
@@ -13,6 +13,8 @@ export default function Img({
   onClick?: () => void;
   overlay?: boolean;
 }) {
+  // A broken photo falls back to the plain placeholder background.
+  const [broken, setBroken] = useState(false);
   return (
     <div
       onClick={onClick}
@@ -25,16 +27,19 @@ export default function Img({
         ...style,
       }}
     >
-      <img
-        src={src}
-        alt={alt}
-        style={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          display: "block",
-        }}
-      />
+      {!broken && (
+        <img
+          src={src}
+          alt={alt}
+          onError={() => setBroken(true)}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            display: "block",
+          }}
+        />
+      )}
       {overlay && (
         <div
           style={{

@@ -3,12 +3,16 @@ import { ROUTES } from "@/app/routes";
 import PhoneFrame from "@/components/shell/PhoneFrame";
 import ScreenNavigator from "@/components/shell/ScreenNavigator";
 import DevScreenMenu from "@/components/shell/DevScreenMenu";
-import { ShellContext, useDetectedShellMode } from "@/components/shell/ShellContext";
+import {
+  ShellContext,
+  useDetectedShellMode,
+} from "@/components/shell/ShellContext";
 
 function CurrentScreen() {
-  const { screen } = useApp();
+  const { screen, params } = useApp();
   const Page = ROUTES[screen];
-  return <Page />;
+  // Remount on id change so detail screens never show the previous record.
+  return <Page key={`${screen}/${params.id ?? ""}`} />;
 }
 
 function Shell() {

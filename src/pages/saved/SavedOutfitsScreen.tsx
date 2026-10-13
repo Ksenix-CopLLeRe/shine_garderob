@@ -4,11 +4,15 @@ import Img from "@/components/ui/Img";
 import Divider from "@/components/ui/Divider";
 import StatusBar from "@/components/layout/StatusBar";
 import BottomNav from "@/components/layout/BottomNav";
-import { SAVED_OUTFITS } from "@/data/outfits";
+import { useSavedOutfits } from "@/api/useShineData";
+import SavedEmptyScreen from "./SavedEmptyScreen";
 
 export default function SavedOutfitsScreen() {
   const ctx = useApp();
-  const outfits = SAVED_OUTFITS;
+  const { data, source } = useSavedOutfits();
+  const outfits = data ?? [];
+
+  if (source === "api" && outfits.length === 0) return <SavedEmptyScreen />;
 
   return (
     <div
@@ -44,7 +48,7 @@ export default function SavedOutfitsScreen() {
             <button
               key={i}
               aria-label={`Открыть образ: ${o.n}`}
-              onClick={() => ctx.go("outfit-detail")}
+              onClick={() => ctx.go("outfit-detail", o.id)}
               style={{
                 gridColumn: o.big ? "span 2" : undefined,
                 padding: 0,

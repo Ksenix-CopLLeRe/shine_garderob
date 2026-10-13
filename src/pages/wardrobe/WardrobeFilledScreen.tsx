@@ -6,13 +6,22 @@ import Divider from "@/components/ui/Divider";
 import Tag from "@/components/ui/Tag";
 import StatusBar from "@/components/layout/StatusBar";
 import BottomNav from "@/components/layout/BottomNav";
-import { WARDROBE_CATEGORIES, WARDROBE_ITEMS } from "@/data/wardrobe";
+import { WARDROBE_CATEGORIES } from "@/data/wardrobe";
+import { useWardrobeItems } from "@/api/useShineData";
+import Notice from "@/components/ui/Notice";
+import WardrobeEmptyScreen from "./WardrobeEmptyScreen";
 
 export default function WardrobeFilledScreen() {
   const ctx = useApp();
   const [cat, setCat] = useState("Все");
   const cats = WARDROBE_CATEGORIES;
-  const things = WARDROBE_ITEMS;
+  const { data, source } = useWardrobeItems();
+  // Mock items carry no category, so they stay visible under every tab.
+  const things = (data ?? []).filter(
+    (t) => cat === "Все" || !t.category || t.category === cat,
+  );
+
+  if (source === "api" && data?.length === 0) return <WardrobeEmptyScreen />;
 
   return (
     <div
@@ -82,7 +91,7 @@ export default function WardrobeFilledScreen() {
             <button
               key={i}
               aria-label={`Открыть: ${t.n}`}
-              onClick={() => ctx.go("item-card")}
+              onClick={() => ctx.go("item-card", t.id)}
               style={{
                 padding: 0,
                 background: "transparent",
@@ -109,7 +118,16 @@ export default function WardrobeFilledScreen() {
                   paddingLeft: 2,
                 }}
               >
-                {t.n}
+                <span
+                  style={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
+                  }}
+                >
+                  {t.n}
+                </span>
                 <span style={{ color: "#5A5855" }}>
                   <I.ChevronRight />
                 </span>
@@ -117,6 +135,9 @@ export default function WardrobeFilledScreen() {
             </button>
           ))}
         </div>
+        {source === "api" && things.length === 0 && (
+          <Notice>В этой категории пока нет вещей</Notice>
+        )}
         <div style={{ height: 16 }} />
       </div>
       <BottomNav active="wardrobe" />
