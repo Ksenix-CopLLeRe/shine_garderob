@@ -10,110 +10,67 @@ export default function OutfitAlternativeScreen() {
   const ctx = useApp();
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0149"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "4px 24px",
-        }}
+        className="shine-style-0150"
       >
         <BackBtn onClick={() => ctx.back()} />
         <Caption>Вариант 2</Caption>
       </div>
-      <div style={{ flex: 1, overflowY: "auto" }} className="scrollbar-hide">
-        <div style={{ padding: "8px 16px 0" }}>
-          <div style={{ height: 220, display: "flex", gap: 8 }}>
+      <div  className="scrollbar-hide shine-style-0151">
+        <div className="shine-style-0152">
+          <div className="shine-style-0153">
             <div
-              style={{
-                flex: 1,
-                display: "flex",
-                flexDirection: "column",
-                gap: 8,
-              }}
+              className="shine-style-0154"
             >
               <Img
                 src={IMGS.itemGraySuit}
                 alt="gray suit"
-                style={{ flex: 1.4 }}
+                className="shine-style-0155"
               />
-              <Img src={IMGS.itemJeansDetail} alt="jeans" style={{ flex: 1 }} />
+              <Img src={IMGS.itemJeansDetail} alt="jeans" className="shine-style-0156" />
             </div>
             <div
-              style={{
-                flex: 1,
-                display: "flex",
-                flexDirection: "column",
-                gap: 8,
-              }}
+              className="shine-style-0157"
             >
               <Img
                 src={IMGS.itemBeltDetail}
                 alt="accessory"
-                style={{ flex: 0.8 }}
+                className="shine-style-0158"
               />
               <Img
                 src={IMGS.itemLeatherShoes}
                 alt="leather shoes"
-                style={{ flex: 1.2 }}
+                className="shine-style-0159"
               />
             </div>
           </div>
         </div>
 
         <div
-          style={{
-            padding: "10px 24px",
-            background: "#141414",
-            borderTop: "1px solid #1E1E1E",
-            borderBottom: "1px solid #1E1E1E",
-            margin: "12px 0",
-          }}
+          className="shine-style-0160"
         >
           <div
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 12,
-              color: "#6B1F2B",
-              letterSpacing: "0.04em",
-            }}
+            className="shine-style-0161"
           >
             ● Рекомендации обновлены — теплее и базовее
           </div>
         </div>
 
-        <div style={{ padding: "8px 24px 32px" }}>
+        <div className="shine-style-0162">
           <div
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: 26,
-              fontWeight: 400,
-              color: "#F3F0E9",
-              marginBottom: 8,
-            }}
+            className="shine-style-0163"
           >
             Тёплый минимализм
           </div>
           <div
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 13,
-              color: "#8A8680",
-              lineHeight: 1.65,
-              marginBottom: 24,
-            }}
+            className="shine-style-0164"
           >
             Серый жакет вместо рубашки — образ стал строже, но не потерял линию.
           </div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <div className="shine-style-0165">
             <Btn
               full
               onClick={() =>

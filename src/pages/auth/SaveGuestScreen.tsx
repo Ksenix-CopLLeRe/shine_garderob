@@ -9,69 +9,40 @@ export default function SaveGuestScreen() {
   const ctx = useApp();
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0053"
     >
       <StatusBar />
-      <div style={{ padding: "4px 24px" }}>
+      <div className="shine-style-0054">
         <BackBtn onClick={() => ctx.back()} />
       </div>
       <div
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          padding: "8px 24px 40px",
-        }}
+        className="shine-style-0055"
       >
         <div
-          style={{
-            display: "flex",
-            gap: 8,
-            height: 140,
-            marginBottom: 28,
-            marginTop: 8,
-          }}
+          className="shine-style-0056"
         >
           <Img
             src={IMGS.editorialBlazer}
             alt="outfit preview"
-            style={{ flex: 1.3, height: "100%" }}
+            className="shine-style-0057"
           />
           <Img
             src={IMGS.itemCoat}
             alt="outfit piece"
-            style={{ flex: 0.7, height: "100%" }}
+            className="shine-style-0058"
           />
         </div>
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 36,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            lineHeight: 1.15,
-            marginBottom: 12,
-          }}
+          className="shine-style-0059"
         >
           Сохрани образ и свой гардероб
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 14,
-            color: "#6A6865",
-            lineHeight: 1.75,
-            marginBottom: 40,
-          }}
+          className="shine-style-0060"
         >
           Создайте аккаунт — и образы будут всегда под рукой.
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div className="shine-style-0061">
           <Btn
             full
             onClick={() => {

@@ -8,29 +8,19 @@ export default function AIReactionScreen() {
   const ctx = useApp();
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0094"
     >
       <StatusBar />
       <div
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          padding: "8px 24px 32px",
-        }}
+        className="shine-style-0095"
       >
         <Placeholder
           label="Фото пользователя"
-          style={{ width: "100%", height: 260, marginBottom: 32 }}
+          className="shine-style-0096"
         />
-        <Caption style={{ color: "#6B1F2B", marginBottom: 24 }}>Shine</Caption>
+        <Caption className="shine-style-0097">Shine</Caption>
         <div
-          style={{ flex: 1, display: "flex", flexDirection: "column", gap: 24 }}
+          className="shine-style-0098"
         >
           {[
             { t: "Ваааай, что за лев этот тигр", italic: true },
@@ -39,16 +29,10 @@ export default function AIReactionScreen() {
               italic: false,
             },
           ].map((item, i) => (
-            <div key={i} style={{ display: "flex", gap: 16 }}>
-              <div style={{ width: 1, background: "#6B1F2B", flexShrink: 0 }} />
+            <div key={i} className="shine-style-0099">
+              <div className="shine-style-0100" />
               <div
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: 20,
-                  fontStyle: item.italic ? "italic" : "normal",
-                  color: "#F3F0E9",
-                  lineHeight: 1.5,
-                }}
+                className={["ai-reaction__quote", item.italic && "ai-reaction__quote--italic"].filter(Boolean).join(" ")}
               >
                 {item.t}
               </div>

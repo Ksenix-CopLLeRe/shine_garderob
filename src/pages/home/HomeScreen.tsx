@@ -25,100 +25,57 @@ export default function HomeScreen({ name }: { name: string }) {
         };
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0069"
     >
       <StatusBar />
-      <div style={{ flex: 1, overflowY: "auto" }} className="scrollbar-hide">
-        <section style={{ padding: "4px 24px 42px" }}>
+      <div  className="scrollbar-hide shine-style-0070">
+        <section className="shine-style-0071">
           <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "baseline",
-              paddingBottom: 14,
-              borderBottom: "1px solid #1E1E1E",
-            }}
+            className="shine-style-0072"
           >
             <div
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 29,
-                fontWeight: 400,
-                color: "#F3F0E9",
-              }}
+              className="shine-style-0073"
             >
               Shine
             </div>
             <div
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 11,
-                color: "#8A8680",
-              }}
+              className="shine-style-0074"
             >
               Москва · 12° · облачно
             </div>
           </div>
           <div
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 13,
-              color: "#8A8680",
-              marginTop: 36,
-              marginBottom: 5,
-            }}
+            className="shine-style-0075"
           >
             Доброе утро, {name}
           </div>
           <div
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: 40,
-              fontWeight: 400,
-              color: "#F3F0E9",
-              lineHeight: 1.04,
-            }}
+            className="shine-style-0076"
           >
             Что надеть <em>сегодня?</em>
           </div>
-          <div style={{ height: 172, display: "flex", gap: 8, marginTop: 28 }}>
+          <div className="shine-style-0077">
             <Img
               src={IMGS.editorialBlackJacket}
               alt="fashion editorial"
-              style={{ flex: 1.5, height: "100%" }}
+              className="shine-style-0078"
             />
             <div
-              style={{
-                flex: 1,
-                display: "flex",
-                flexDirection: "column",
-                gap: 8,
-              }}
+              className="shine-style-0079"
             >
               <Img
                 src={IMGS.editorialBWCoat}
                 alt="fashion detail"
-                style={{ flex: 1 }}
+                className="shine-style-0080"
               />
               <div
-                style={{
-                  flex: 0.46,
-                  borderTop: "1px solid #6B1F2B",
-                  display: "flex",
-                  alignItems: "end",
-                  paddingBottom: 7,
-                }}
+                className="shine-style-0081"
               >
-                <Caption style={{ color: "#8A8680" }}>На сегодня</Caption>
+                <Caption className="shine-style-0082">На сегодня</Caption>
               </div>
             </div>
           </div>
-          <div style={{ marginTop: 18 }}>
+          <div className="shine-style-0083">
             <Btn full onClick={() => ctx.go("situation")}>
               Подобрать образ
             </Btn>
@@ -127,40 +84,18 @@ export default function HomeScreen({ name }: { name: string }) {
 
         <Divider />
 
-        <section style={{ padding: "18px 24px 32px" }}>
+        <section className="shine-style-0084">
           <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              marginBottom: 14,
-            }}
+            className="shine-style-0085"
           >
             <div
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 22,
-                color: "#F3F0E9",
-              }}
+              className="shine-style-0086"
             >
               Мои образы
             </div>
             <button
               onClick={() => ctx.go("saved-outfits")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 2,
-                padding: 4,
-                background: "transparent",
-                border: "none",
-                color: "#8A8680",
-                cursor: "pointer",
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 11,
-                letterSpacing: "0.07em",
-                textTransform: "uppercase",
-              }}
+              className="shine-style-0087"
             >
               Все <I.ChevronRight />
             </button>
@@ -168,45 +103,26 @@ export default function HomeScreen({ name }: { name: string }) {
           {latest && (
             <button
               onClick={() => ctx.go("outfit-detail", latest.id)}
-              style={{
-                width: "100%",
-                display: "flex",
-                alignItems: "center",
-                gap: 12,
-                padding: 0,
-                background: "transparent",
-                border: "none",
-                textAlign: "left",
-                cursor: "pointer",
-              }}
+              className="shine-style-0088"
             >
               <Img
                 src={latest.img}
                 alt={latest.n}
-                style={{ width: 78, height: 94 }}
+                className="shine-style-0089"
               />
-              <div style={{ flex: 1 }}>
+              <div className="shine-style-0090">
                 <div
-                  style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: 18,
-                    color: "#F3F0E9",
-                    marginBottom: 4,
-                  }}
+                  className="shine-style-0091"
                 >
                   {latest.n}
                 </div>
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 12,
-                    color: "#8A8680",
-                  }}
+                  className="shine-style-0092"
                 >
                   {latest.d ? `${latest.s} · ${latest.d}` : latest.s}
                 </div>
               </div>
-              <div style={{ color: "#8A8680" }}>
+              <div className="shine-style-0093">
                 <I.ChevronRight />
               </div>
             </button>

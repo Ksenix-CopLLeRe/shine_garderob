@@ -4,14 +4,7 @@ import type { ReactNode } from "react";
 export default function Notice({ children }: { children: ReactNode }) {
   return (
     <div
-      style={{
-        fontFamily: "'DM Sans', sans-serif",
-        fontSize: 13,
-        lineHeight: 1.6,
-        color: "#8A8680",
-        textAlign: "center",
-        padding: "40px 24px",
-      }}
+      className="shine-style-0028"
     >
       {children}
     </div>

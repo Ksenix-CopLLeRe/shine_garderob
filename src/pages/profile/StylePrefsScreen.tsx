@@ -19,52 +19,28 @@ export default function StylePrefsScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0276"
     >
       <StatusBar />
-      <div style={{ padding: "4px 24px" }}>
+      <div className="shine-style-0277">
         <BackBtn onClick={() => ctx.back()} />
       </div>
       <div
-        style={{ flex: 1, overflowY: "auto", padding: "8px 24px 0" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0278"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 34,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            lineHeight: 1.15,
-            marginBottom: 8,
-            marginTop: 8,
-          }}
+          className="shine-style-0279"
         >
           Ваш стиль
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 13,
-            color: "#6A6865",
-            lineHeight: 1.7,
-            marginBottom: 28,
-          }}
+          className="shine-style-0280"
         >
           Выберите направления — Shine учтёт их при подборе образов
         </div>
         <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: 8,
-            marginBottom: 32,
-          }}
+          className="shine-style-0281"
         >
           {styles.map((s) => (
             <Tag key={s} active={sel.includes(s)} onClick={() => toggle(s)}>
@@ -72,29 +48,19 @@ export default function StylePrefsScreen() {
             </Tag>
           ))}
         </div>
-        <Caption style={{ marginBottom: 16 }}>Вдохновение</Caption>
+        <Caption className="shine-style-0282">Вдохновение</Caption>
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 8,
-            marginBottom: 24,
-          }}
+          className="shine-style-0283"
         >
           {sel.slice(0, 4).map((s, i) => (
             <div key={i}>
               <Img
                 src={moodImgs[s] || IMGS.editorialBlazer}
                 alt={s}
-                style={{ width: "100%", height: 120 }}
+                className="shine-style-0284"
               />
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 11,
-                  color: "#5A5855",
-                  marginTop: 6,
-                }}
+                className="shine-style-0285"
               >
                 {s}
               </div>
@@ -102,7 +68,7 @@ export default function StylePrefsScreen() {
           ))}
         </div>
       </div>
-      <div style={{ padding: "16px 24px 28px" }}>
+      <div className="shine-style-0286">
         <Btn full onClick={() => ctx.go("profile")}>
           Сохранить
         </Btn>

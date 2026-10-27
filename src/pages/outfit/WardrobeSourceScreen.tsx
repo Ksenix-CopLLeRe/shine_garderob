@@ -25,119 +25,63 @@ export default function WardrobeSourceScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0239"
     >
       <StatusBar />
-      <div style={{ padding: "4px 24px" }}>
+      <div className="shine-style-0240">
         <BackBtn onClick={() => ctx.back()} />
       </div>
       <div
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          padding: "8px 24px 40px",
-        }}
+        className="shine-style-0241"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 36,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            lineHeight: 1.15,
-            marginBottom: 12,
-            marginTop: 8,
-          }}
+          className="shine-style-0242"
         >
           Из чего
           <br />
           соберём образ?
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 14,
-            color: "#6A6865",
-            lineHeight: 1.7,
-            marginBottom: 48,
-          }}
+          className="shine-style-0243"
         >
           Попробовать Shine можно без регистрации и заполнения гардероба.
         </div>
-        <div style={{ flex: 1 }}>
+        <div className="shine-style-0244">
           {sources.map((item) => (
             <button
               key={item.id}
               onClick={() => setSelected(item.id)}
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: "20px 0",
-                borderTop: "1px solid #1E1E1E",
-                background: "transparent",
-                cursor: "pointer",
-                textAlign: "left",
-              }}
+              className="shine-style-0245"
             >
               <div>
                 <div
-                  style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: 24,
-                    color: "#F3F0E9",
-                    marginBottom: 4,
-                  }}
+                  className="shine-style-0246"
                 >
                   {item.l}
                 </div>
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 12,
-                    color: "#5A5855",
-                  }}
+                  className="shine-style-0247"
                 >
                   {item.s}
                 </div>
               </div>
               <div
                 aria-hidden="true"
-                style={{
-                  width: 18,
-                  height: 18,
-                  border: `1px solid ${selected === item.id ? "#F3F0E9" : "#4A4845"}`,
-                  borderRadius: "50%",
-                  display: "grid",
-                  placeItems: "center",
-                  flexShrink: 0,
-                }}
+                className={["radio", selected === item.id && "radio--selected"].filter(Boolean).join(" ")}
               >
                 {selected === item.id && (
                   <div
-                    style={{
-                      width: 8,
-                      height: 8,
-                      borderRadius: "50%",
-                      background: "#6B1F2B",
-                    }}
+                    className="shine-style-0248"
                   />
                 )}
               </div>
             </button>
           ))}
-          <div style={{ height: 1, background: "#1E1E1E" }} />
+          <div className="shine-style-0249" />
         </div>
       </div>
       {selected && (
-        <div style={{ padding: "16px 24px 24px" }}>
+        <div className="shine-style-0250">
           <Btn
             full
             onClick={() =>

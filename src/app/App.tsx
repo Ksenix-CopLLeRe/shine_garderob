@@ -21,19 +21,7 @@ function Shell() {
   if (mode === "device") {
     return (
       <ShellContext.Provider value="device">
-        <div
-          style={{
-            height: "100dvh",
-            background: "#0D0D0D",
-            display: "flex",
-            flexDirection: "column",
-            overflow: "hidden",
-            paddingBottom: "env(safe-area-inset-bottom)",
-            paddingLeft: "env(safe-area-inset-left)",
-            paddingRight: "env(safe-area-inset-right)",
-            fontFamily: "'DM Sans', sans-serif",
-          }}
-        >
+        <div className="shine-theme shine-style-0001">
           <CurrentScreen />
         </div>
         {import.meta.env.DEV && <DevScreenMenu />}
@@ -43,22 +31,11 @@ function Shell() {
 
   return (
     <ShellContext.Provider value="framed">
-      <div
-        style={{
-          minHeight: "100vh",
-          background: "#040404",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "24px 20px",
-          fontFamily: "'DM Sans', sans-serif",
-        }}
-      >
+      <div className="shine-theme shine-style-0002">
         <PhoneFrame>
           <CurrentScreen />
         </PhoneFrame>
-        <div style={{ marginTop: 16 }}>
+        <div className="shine-style-0003">
           <ScreenNavigator />
         </div>
       </div>

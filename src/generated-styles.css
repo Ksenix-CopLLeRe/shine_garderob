@@ -1,0 +1,480 @@
+/* Generated from static JSX styles. Dynamic component states use named classes in index.css. */
+.shine-style-0001 { height: 100dvh; background: var(--color-bg); display: flex; flex-direction: column; overflow: hidden; padding-bottom: env(safe-area-inset-bottom); padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); font-family: var(--font-sans); }
+.shine-style-0002 { min-height: 100vh; background: var(--color-canvas); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px 20px; font-family: var(--font-sans); }
+.shine-style-0003 { margin-top: 16px; }
+.shine-style-0004 { border-top: 1px solid var(--color-border); background: var(--color-bg); flex-shrink: 0; }
+.shine-style-0005 { display: flex; }
+.shine-style-0006 { font-family: var(--font-sans); font-size: 9px; letter-spacing: 0.06em; text-transform: uppercase; }
+.shine-style-0007 { width: 3px; height: 3px; border-radius: 50%; background: var(--color-accent); position: absolute; bottom: 4px; }
+.shine-style-0008 { height: 18px; }
+.shine-style-0009 { height: env(safe-area-inset-top); flex-shrink: 0; }
+.shine-style-0010 { display: flex; justify-content: space-between; align-items: center; padding: 10px 24px 6px; height: 44px; flex-shrink: 0; }
+.shine-style-0011 { position: absolute; left: 50%; top: 10px; transform: translateX(-50%); width: 90px; height: 24px; background: var(--color-black); border-radius: 12px; }
+.shine-style-0012 { display: flex; gap: 8px; align-items: center; }
+.shine-style-0013 { display: flex; gap: 2px; align-items: flex-end; }
+.shine-style-0014 { position: fixed; right: 0px; top: 50%; transform: translateY(-50%); width: 14px; height: 56px; background: rgba(107,31,43,0.55); border: none; border-radius: 4px 0 0 4px; cursor: pointer; z-index: 1000; }
+.shine-style-0015 { position: fixed; inset: 0px; background: rgba(0,0,0,0.7); display: flex; align-items: flex-end; z-index: 1001; padding-bottom: env(safe-area-inset-bottom); }
+.shine-style-0016 { width: 100%; }
+.shine-style-0017 { width: 390px; height: 844px; background: var(--color-bg); position: relative; overflow: hidden; display: flex; flex-direction: column; border-radius: 44px; box-shadow: 0 0 0 10px var(--color-device), 0 0 0 11px var(--color-border-subtle), 0 40px 100px rgba(0,0,0,0.9), 0 0 60px rgba(0,0,0,0.5); border: 1px solid var(--color-border-strong); }
+.shine-style-0018 { flex: 1; display: flex; flex-direction: column; overflow: hidden; border-radius: 44px; }
+.shine-style-0019 { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; background: var(--color-bg); border: 1px solid var(--color-border-subtle); cursor: pointer; color: var(--color-text); }
+.shine-style-0020 { font-family: var(--font-sans); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted-2); }
+.shine-style-0021 { color: var(--color-text); }
+.shine-style-0022 { font-family: var(--font-sans); font-size: 11px; color: var(--color-muted-2); letter-spacing: 0.06em; text-transform: uppercase; }
+.shine-style-0023 { font-family: var(--font-sans); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-muted-strong); padding: 10px 16px 6px; }
+.shine-style-0024 { color: var(--color-text); min-width: 36px; min-height: 36px; padding: 8px; display: flex; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; }
+.shine-style-0025 { height: 1px; background: var(--color-border-subtle); flex-shrink: 0; }
+.shine-style-0026 { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shine-style-0027 { position: absolute; inset: 0px; background: rgba(13,13,13,0.35); }
+.shine-style-0028 { font-family: var(--font-sans); font-size: 13px; line-height: 1.6; color: var(--color-text-muted); text-align: center; padding: 40px 24px; }
+.shine-style-0029 { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--color-surface-danger); color: var(--color-text-secondary); font-family: var(--font-sans); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; text-align: center; }
+.shine-style-0030 { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shine-style-0031 { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; justify-content: space-between; gap: 8px; }
+.shine-style-0032 { width: 32px; height: 32px; display: grid; place-items: center; color: var(--color-text); background: rgba(13,13,13,0.94); border: 1px solid var(--color-muted); cursor: pointer; }
+.shine-style-0033 { width: 32px; height: 32px; display: grid; place-items: center; color: var(--color-text); background: var(--color-accent); border: 1px solid var(--color-accent-hover); cursor: pointer; }
+.shine-style-0034 { color: var(--color-placeholder-text); font-size: 10px; font-family: var(--font-sans); letter-spacing: 0.08em; text-transform: uppercase; text-align: center; padding: 0 10px; white-space: pre-line; line-height: 1.6; }
+.shine-style-0035 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0036 { display: flex; justify-content: space-between; align-items: center; padding: 4px 24px; }
+.shine-style-0037 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); letter-spacing: 0.06em; background: transparent; border: none; cursor: pointer; }
+.shine-style-0038 { flex: 1; display: flex; flex-direction: column; padding: 12px 24px 40px; }
+.shine-style-0039 { font-family: var(--font-serif); font-size: 38px; font-weight: 400; color: var(--color-text); margin-bottom: 40px; margin-top: 8px; }
+.shine-style-0040 { flex: 1; display: flex; flex-direction: column; gap: 32px; }
+.shine-style-0041 { margin-bottom: 8px; }
+.shine-style-0042 { width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--color-border-strong); padding: 12px 0; font-family: var(--font-sans); font-size: 16px; color: var(--color-text); outline: none; }
+.shine-style-0043 { text-align: center; margin-top: 16px; }
+.shine-style-0044 { font-family: var(--font-sans); font-size: 13px; color: var(--color-muted-2); background: transparent; border: none; cursor: pointer; }
+.shine-style-0045 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0046 { display: flex; justify-content: space-between; align-items: center; padding: 4px 24px; }
+.shine-style-0047 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); letter-spacing: 0.06em; background: transparent; border: none; cursor: pointer; }
+.shine-style-0048 { flex: 1; display: flex; flex-direction: column; padding: 12px 24px 40px; }
+.shine-style-0049 { font-family: var(--font-serif); font-size: 38px; font-weight: 400; color: var(--color-text); margin-bottom: 40px; margin-top: 8px; }
+.shine-style-0050 { flex: 1; display: flex; flex-direction: column; gap: 32px; }
+.shine-style-0051 { margin-bottom: 8px; }
+.shine-style-0052 { width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--color-border-strong); padding: 12px 0; font-family: var(--font-sans); font-size: 16px; color: var(--color-text); outline: none; }
+.shine-style-0053 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0054 { padding: 4px 24px; }
+.shine-style-0055 { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 40px; }
+.shine-style-0056 { display: flex; gap: 8px; height: 140px; margin-bottom: 28px; margin-top: 8px; }
+.shine-style-0057 { flex: 1.3; height: 100%; }
+.shine-style-0058 { flex: 0.7; height: 100%; }
+.shine-style-0059 { font-family: var(--font-serif); font-size: 36px; font-weight: 400; color: var(--color-text); line-height: 1.15; margin-bottom: 12px; }
+.shine-style-0060 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.75; margin-bottom: 40px; }
+.shine-style-0061 { display: flex; flex-direction: column; gap: 10px; }
+.shine-style-0062 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); position: relative; }
+.shine-style-0063 { position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; opacity: 0.12; }
+.shine-style-0064 { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 32px; text-align: center; }
+.shine-style-0065 { width: 1px; height: 56px; background: var(--color-accent); margin: 0 auto 32px; }
+.shine-style-0066 { font-family: var(--font-serif); font-size: 40px; font-weight: 400; color: var(--color-text); margin-bottom: 12px; }
+.shine-style-0067 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 48px; }
+.shine-style-0068 { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+.shine-style-0069 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0070 { flex: 1; overflow-y: auto; }
+.shine-style-0071 { padding: 4px 24px 42px; }
+.shine-style-0072 { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 14px; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0073 { font-family: var(--font-serif); font-size: 29px; font-weight: 400; color: var(--color-text); }
+.shine-style-0074 { font-family: var(--font-sans); font-size: 11px; color: var(--color-text-muted); }
+.shine-style-0075 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text-muted); margin-top: 36px; margin-bottom: 5px; }
+.shine-style-0076 { font-family: var(--font-serif); font-size: 40px; font-weight: 400; color: var(--color-text); line-height: 1.04; }
+.shine-style-0077 { height: 172px; display: flex; gap: 8px; margin-top: 28px; }
+.shine-style-0078 { flex: 1.5; height: 100%; }
+.shine-style-0079 { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.shine-style-0080 { flex: 1; }
+.shine-style-0081 { flex: 0.46; border-top: 1px solid var(--color-accent); display: flex; align-items: end; padding-bottom: 7px; }
+.shine-style-0082 { color: var(--color-text-muted); }
+.shine-style-0083 { margin-top: 18px; }
+.shine-style-0084 { padding: 18px 24px 32px; }
+.shine-style-0085 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.shine-style-0086 { font-family: var(--font-serif); font-size: 22px; color: var(--color-text); }
+.shine-style-0087 { display: flex; align-items: center; gap: 2px; padding: 4px; background: transparent; border: none; color: var(--color-text-muted); cursor: pointer; font-family: var(--font-sans); font-size: 11px; letter-spacing: 0.07em; text-transform: uppercase; }
+.shine-style-0088 { width: 100%; display: flex; align-items: center; gap: 12px; padding: 0px; background: transparent; border: none; text-align: left; cursor: pointer; }
+.shine-style-0089 { width: 78px; height: 94px; }
+.shine-style-0090 { flex: 1; }
+.shine-style-0091 { font-family: var(--font-serif); font-size: 18px; color: var(--color-text); margin-bottom: 4px; }
+.shine-style-0092 { font-family: var(--font-sans); font-size: 12px; color: var(--color-text-muted); }
+.shine-style-0093 { color: var(--color-text-muted); }
+.shine-style-0094 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0095 { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 32px; }
+.shine-style-0096 { width: 100%; height: 260px; margin-bottom: 32px; }
+.shine-style-0097 { color: var(--color-accent); margin-bottom: 24px; }
+.shine-style-0098 { flex: 1; display: flex; flex-direction: column; gap: 24px; }
+.shine-style-0099 { display: flex; gap: 16px; }
+.shine-style-0100 { width: 1px; background: var(--color-accent); flex-shrink: 0; }
+.shine-style-0101 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0102 { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 32px; }
+.shine-style-0103 { display: flex; justify-content: flex-end; margin-bottom: 28px; }
+.shine-style-0104 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); letter-spacing: 0.07em; text-transform: uppercase; background: transparent; border: none; cursor: pointer; }
+.shine-style-0105 { font-family: var(--font-serif); font-size: 38px; font-weight: 400; color: var(--color-text); line-height: 1.15; margin-bottom: 16px; }
+.shine-style-0106 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 40px; }
+.shine-style-0107 { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+.shine-style-0108 { display: flex; flex-direction: column; gap: 24px; }
+.shine-style-0109 { display: flex; align-items: center; gap: 16px; padding: 16px; border: 1px solid var(--color-border-strong); background: transparent; cursor: pointer; text-align: left; border-radius: 1px; }
+.shine-style-0110 { width: 52px; height: 52px; flex-shrink: 0; }
+.shine-style-0111 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text); font-weight: 500; }
+.shine-style-0112 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); margin-top: 2px; }
+.shine-style-0113 { width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--color-border-strong); padding: 12px 0; font-family: var(--font-sans); font-size: 16px; color: var(--color-text); outline: none; margin-top: 8px; }
+.shine-style-0114 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0115 { display: flex; align-items: center; justify-content: space-between; padding: 4px 24px; }
+.shine-style-0116 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); letter-spacing: 0.07em; text-transform: uppercase; background: transparent; border: none; cursor: pointer; }
+.shine-style-0117 { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 32px; }
+.shine-style-0118 { margin-bottom: 20px; }
+.shine-style-0119 { font-family: var(--font-serif); font-size: 34px; font-weight: 400; color: var(--color-text); line-height: 1.2; margin-bottom: 28px; margin-top: 8px; }
+.shine-style-0120 { width: 100%; flex: 1; min-height: 260px; margin-bottom: 28px; }
+.shine-style-0121 { display: flex; flex-direction: column; gap: 12px; }
+.shine-style-0122 { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 14px 24px; border: 1px solid var(--color-text); background: transparent; border-radius: 1px; color: var(--color-text); font-family: var(--font-sans); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; }
+.shine-style-0123 { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 14px 24px; border: 1px solid var(--color-border-strong); background: transparent; border-radius: 1px; color: var(--color-text-secondary); font-family: var(--font-sans); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; cursor: pointer; }
+.shine-style-0124 { height: 100%; position: relative; background: var(--color-bg); display: flex; align-items: center; justify-content: center; }
+.shine-style-0125 { position: absolute; inset: 0px; width: 100%; height: 100%; object-fit: cover; opacity: 0.22; }
+.shine-style-0126 { position: absolute; inset: 0px; background: linear-gradient(to bottom, var(--color-bg) 0%, transparent 30%, transparent 70%, var(--color-bg) 100%); }
+.shine-style-0127 { position: relative; text-align: center; animation: fadeIn 1s ease; }
+.shine-style-0128 { font-family: var(--font-serif); font-size: 84px; font-weight: 400; color: var(--color-text); letter-spacing: -0.03em; line-height: 1; }
+.shine-style-0129 { width: 32px; height: 1px; background: var(--color-accent); margin: 18px auto 18px; }
+.shine-style-0130 { font-family: var(--font-sans); font-size: 10px; color: var(--color-text-secondary); letter-spacing: 0.22em; text-transform: uppercase; }
+.shine-style-0131 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0132 { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 12px 24px 32px; }
+.shine-style-0133 { font-family: var(--font-serif); font-size: 50px; font-weight: 400; color: var(--color-text); line-height: 1.06; margin-bottom: 20px; }
+.shine-style-0134 { width: 20px; height: 1px; background: var(--color-accent); margin-bottom: 20px; }
+.shine-style-0135 { font-family: var(--font-sans); font-size: 15px; color: var(--color-text-secondary); line-height: 1.7; }
+.shine-style-0136 { position: relative; height: 210px; margin-bottom: 28px; }
+.shine-style-0137 { position: absolute; left: 0px; top: 0px; width: 152px; height: 196px; }
+.shine-style-0138 { position: absolute; right: 0px; top: 20px; width: 124px; height: 168px; }
+.shine-style-0139 { position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%); width: 1px; height: 36px; background: var(--color-border-strong); }
+.shine-style-0140 { display: flex; flex-direction: column; gap: 10px; }
+.shine-style-0141 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0142 { display: flex; align-items: center; gap: 12px; padding: 4px 24px; }
+.shine-style-0143 { flex: 1; overflow-y: auto; padding: 8px 24px 0; }
+.shine-style-0144 { font-family: var(--font-serif); font-size: 32px; font-weight: 400; color: var(--color-text); line-height: 1.15; margin-bottom: 32px; margin-top: 8px; }
+.shine-style-0145 { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--color-border-subtle); background: transparent; cursor: pointer; text-align: left; }
+.shine-style-0146 { font-family: var(--font-sans); font-size: 16px; color: var(--color-text); font-weight: 500; }
+.shine-style-0147 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); margin-top: 3px; }
+.shine-style-0148 { color: var(--color-icon-muted); }
+.shine-style-0149 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0150 { display: flex; align-items: center; justify-content: space-between; padding: 4px 24px; }
+.shine-style-0151 { flex: 1; overflow-y: auto; }
+.shine-style-0152 { padding: 8px 16px 0; }
+.shine-style-0153 { height: 220px; display: flex; gap: 8px; }
+.shine-style-0154 { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.shine-style-0155 { flex: 1.4; }
+.shine-style-0156 { flex: 1; }
+.shine-style-0157 { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.shine-style-0158 { flex: 0.8; }
+.shine-style-0159 { flex: 1.2; }
+.shine-style-0160 { padding: 10px 24px; background: var(--color-surface-raised); border-top: 1px solid var(--color-border-subtle); border-bottom: 1px solid var(--color-border-subtle); margin: 12px 0; }
+.shine-style-0161 { font-family: var(--font-sans); font-size: 12px; color: var(--color-accent); letter-spacing: 0.04em; }
+.shine-style-0162 { padding: 8px 24px 32px; }
+.shine-style-0163 { font-family: var(--font-serif); font-size: 26px; font-weight: 400; color: var(--color-text); margin-bottom: 8px; }
+.shine-style-0164 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text-muted); line-height: 1.65; margin-bottom: 24px; }
+.shine-style-0165 { display: flex; flex-direction: column; gap: 10px; }
+.shine-style-0166 { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--color-bg); padding: 0 40px; }
+.shine-style-0167 { display: flex; flex-direction: column; align-items: center; gap: 36px; }
+.shine-style-0168 { width: 60px; height: 1px; background: var(--color-border); position: relative; overflow: hidden; }
+.shine-style-0169 { position: absolute; top: 0px; left: 0px; width: 40%; height: 100%; background: var(--color-text); animation: slideLoader 1.5s ease-in-out infinite; }
+.shine-style-0170 { text-align: center; }
+.shine-style-0171 { font-family: var(--font-serif); font-size: 22px; font-style: italic; color: var(--color-text); line-height: 1.4; margin-bottom: 8px; }
+.shine-style-0172 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); letter-spacing: 0.05em; }
+.shine-style-0173 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0174 { display: flex; align-items: center; justify-content: space-between; padding: 4px 24px; }
+.shine-style-0175 { width: 36px; height: 36px; }
+.shine-style-0176 { flex: 1; overflow-y: auto; }
+.shine-style-0177 { display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: #241216; border-top: 1px solid var(--color-accent); border-bottom: 1px solid var(--color-accent); }
+.shine-style-0178 { width: 5px; height: 5px; background: var(--color-accent-hover); }
+.shine-style-0179 { font-family: var(--font-sans); font-size: 11px; color: var(--color-text); letter-spacing: 0.04em; }
+.shine-style-0180 { padding: 8px 16px 12px; }
+.shine-style-0181 { display: flex; gap: 8px; height: 220px; }
+.shine-style-0182 { flex: 1.3; height: 100%; }
+.shine-style-0183 { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.shine-style-0184 { flex: 1; }
+.shine-style-0185 { flex: 1; }
+.shine-style-0186 { display: flex; gap: 8px; height: 110px; margin-top: 8px; }
+.shine-style-0187 { flex: 1; }
+.shine-style-0188 { flex: 0.75; }
+.shine-style-0189 { padding: 20px 24px 32px; }
+.shine-style-0190 { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px; }
+.shine-style-0191 { font-family: var(--font-serif); font-size: 26px; font-weight: 400; color: var(--color-text); flex: 1; margin-right: 12px; }
+.shine-style-0192 { text-align: right; flex-shrink: 0; }
+.shine-style-0193 { font-family: var(--font-sans); font-size: 11px; color: var(--color-muted-2); }
+.shine-style-0194 { font-family: var(--font-sans); font-size: 11px; color: var(--color-muted-2); }
+.shine-style-0195 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text-muted); line-height: 1.65; margin-bottom: 24px; }
+.shine-style-0196 { margin-bottom: 24px; }
+.shine-style-0197 { margin-bottom: 12px; }
+.shine-style-0198 { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.shine-style-0199 { width: 112px; flex-shrink: 0; padding: 0px; background: var(--color-surface); border: 1px solid var(--color-border-strong); text-align: left; cursor: pointer; }
+.shine-style-0200 { width: 100%; height: 78px; }
+.shine-style-0201 { padding: 8px 8px 9px; }
+.shine-style-0202 { font-family: var(--font-sans); font-size: 10px; color: var(--color-text); line-height: 1.25; }
+.shine-style-0203 { font-family: var(--font-sans); font-size: 9px; color: var(--color-text-secondary); line-height: 1.3; margin-top: 3px; }
+.shine-style-0204 { display: flex; flex-direction: column; gap: 10px; }
+.shine-style-0205 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0206 { display: flex; align-items: center; gap: 12px; padding: 4px 24px; }
+.shine-style-0207 { flex: 1; overflow-y: auto; padding: 8px 24px 0; }
+.shine-style-0208 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text-secondary); margin-bottom: 20px; }
+.shine-style-0209 { color: var(--color-text); }
+.shine-style-0210 { display: flex; gap: 16px; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0211 { width: 80px; height: 100px; }
+.shine-style-0212 { display: flex; flex-direction: column; justify-content: center; }
+.shine-style-0213 { font-family: var(--font-sans); font-size: 11px; color: var(--color-muted-2); margin-bottom: 4px; }
+.shine-style-0214 { font-family: var(--font-sans); font-size: 15px; color: var(--color-text); }
+.shine-style-0215 { margin-bottom: 16px; }
+.shine-style-0216 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding-bottom: 24px; }
+.shine-style-0217 { padding: 0px; background: var(--color-surface); border: 1px solid var(--color-border-strong); text-align: left; cursor: pointer; }
+.shine-style-0218 { width: 100%; height: 130px; }
+.shine-style-0219 { display: flex; align-items: center; justify-content: space-between; gap: 4px; padding: 9px 8px; font-family: var(--font-sans); font-size: 11px; color: var(--color-text); }
+.shine-style-0220 { color: var(--color-text-muted); }
+.shine-style-0221 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0222 { padding: 4px 24px; }
+.shine-style-0223 { flex: 1; overflow-y: auto; padding: 8px 24px 0; }
+.shine-style-0224 { font-family: var(--font-serif); font-size: 38px; font-weight: 400; color: var(--color-text); line-height: 1.1; margin-bottom: 8px; }
+.shine-style-0225 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text-secondary); margin-bottom: 28px; }
+.shine-style-0226 { font-family: var(--font-sans); font-size: 11px; color: var(--color-muted-2); margin-top: 3px; }
+.shine-style-0227 { width: 8px; height: 8px; border-radius: 50%; background: var(--color-accent); }
+.shine-style-0228 { padding: 16px 24px 24px; }
+.shine-style-0229 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0230 { display: flex; align-items: center; gap: 12px; padding: 4px 24px; }
+.shine-style-0231 { flex: 1; overflow-y: auto; padding: 8px 24px 0; }
+.shine-style-0232 { font-family: var(--font-serif); font-size: 28px; font-weight: 400; color: var(--color-text); margin-bottom: 4px; margin-top: 8px; }
+.shine-style-0233 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text-secondary); margin-bottom: 24px; }
+.shine-style-0234 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.shine-style-0235 { padding-top: 8px; }
+.shine-style-0236 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text); margin-top: 2px; }
+.shine-style-0237 { height: 20px; }
+.shine-style-0238 { padding: 16px 24px 28px; }
+.shine-style-0239 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0240 { padding: 4px 24px; }
+.shine-style-0241 { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 40px; }
+.shine-style-0242 { font-family: var(--font-serif); font-size: 36px; font-weight: 400; color: var(--color-text); line-height: 1.15; margin-bottom: 12px; margin-top: 8px; }
+.shine-style-0243 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 48px; }
+.shine-style-0244 { flex: 1; }
+.shine-style-0245 { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-top: 1px solid var(--color-border-subtle); background: transparent; cursor: pointer; text-align: left; }
+.shine-style-0246 { font-family: var(--font-serif); font-size: 24px; color: var(--color-text); margin-bottom: 4px; }
+.shine-style-0247 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); }
+.shine-style-0248 { width: 8px; height: 8px; border-radius: 50%; background: var(--color-accent); }
+.shine-style-0249 { height: 1px; background: var(--color-border-subtle); }
+.shine-style-0250 { padding: 16px 24px 24px; }
+.shine-style-0251 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0252 { flex: 1; overflow-y: auto; }
+.shine-style-0253 { position: relative; }
+.shine-style-0254 { width: 100%; height: 300px; }
+.shine-style-0255 { position: absolute; bottom: 0px; left: 0px; right: 0px; background: linear-gradient(to top, var(--color-bg) 20%, transparent); padding: 60px 24px 16px; }
+.shine-style-0256 { font-family: var(--font-serif); font-size: 32px; font-weight: 400; color: var(--color-text); }
+.shine-style-0257 { font-family: var(--font-sans); font-size: 12px; color: var(--color-text-muted); margin-top: 4px; }
+.shine-style-0258 { padding: 0 24px; }
+.shine-style-0259 { display: flex; border-bottom: 1px solid var(--color-border-subtle); margin-bottom: 8px; }
+.shine-style-0260 { font-family: var(--font-serif); font-size: 30px; font-weight: 400; color: var(--color-text); }
+.shine-style-0261 { margin-top: 4px; }
+.shine-style-0262 { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--color-border-subtle); background: transparent; cursor: pointer; }
+.shine-style-0263 { font-family: var(--font-sans); font-size: 15px; color: var(--color-text); }
+.shine-style-0264 { color: var(--color-icon-muted); }
+.shine-style-0265 { height: 8px; }
+.shine-style-0266 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0267 { display: flex; align-items: center; gap: 12px; padding: 4px 24px 12px; }
+.shine-style-0268 { font-family: var(--font-serif); font-size: 22px; font-weight: 400; color: var(--color-text); }
+.shine-style-0269 { flex: 1; overflow-y: auto; padding: 0 24px; }
+.shine-style-0270 { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--color-border-subtle); background: transparent; cursor: pointer; text-align: left; }
+.shine-style-0271 { font-family: var(--font-sans); font-size: 15px; color: var(--color-text); }
+.shine-style-0272 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); margin-top: 2px; }
+.shine-style-0273 { color: var(--color-icon-muted); }
+.shine-style-0274 { padding-top: 32px; padding-bottom: 24px; }
+.shine-style-0275 { font-family: var(--font-sans); font-size: 14px; color: var(--color-accent); letter-spacing: 0.04em; background: transparent; border: none; cursor: pointer; }
+.shine-style-0276 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0277 { padding: 4px 24px; }
+.shine-style-0278 { flex: 1; overflow-y: auto; padding: 8px 24px 0; }
+.shine-style-0279 { font-family: var(--font-serif); font-size: 34px; font-weight: 400; color: var(--color-text); line-height: 1.15; margin-bottom: 8px; margin-top: 8px; }
+.shine-style-0280 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 28px; }
+.shine-style-0281 { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+.shine-style-0282 { margin-bottom: 16px; }
+.shine-style-0283 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 24px; }
+.shine-style-0284 { width: 100%; height: 120px; }
+.shine-style-0285 { font-family: var(--font-sans); font-size: 11px; color: var(--color-muted-2); margin-top: 6px; }
+.shine-style-0286 { padding: 16px 24px 28px; }
+.shine-style-0287 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0288 { display: flex; justify-content: space-between; align-items: center; padding: 4px 24px; }
+.shine-style-0289 { font-family: var(--font-sans); font-size: 12px; color: var(--color-accent); letter-spacing: 0.07em; text-transform: uppercase; background: transparent; border: none; cursor: pointer; }
+.shine-style-0290 { flex: 1; overflow-y: auto; }
+.shine-style-0291 { padding: 8px 16px 12px; }
+.shine-style-0292 { display: flex; gap: 8px; height: 220px; }
+.shine-style-0293 { flex: 1.2; height: 100%; }
+.shine-style-0294 { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.shine-style-0295 { flex: 1; }
+.shine-style-0296 { display: flex; gap: 8px; height: 100px; margin-top: 8px; }
+.shine-style-0297 { flex: 1; }
+.shine-style-0298 { padding: 20px 24px 32px; }
+.shine-style-0299 { font-family: var(--font-serif); font-size: 26px; font-weight: 400; color: var(--color-text); margin-bottom: 8px; }
+.shine-style-0300 { font-family: var(--font-sans); font-size: 14px; line-height: 1.6; color: #B8B4AC; margin-bottom: 24px; }
+.shine-style-0301 { padding-top: 20px; }
+.shine-style-0302 { margin-bottom: 14px; }
+.shine-style-0303 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text-muted); padding-bottom: 8px; }
+.shine-style-0304 { width: 100%; display: flex; align-items: center; gap: 12px; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--color-border-subtle); cursor: pointer; text-align: left; }
+.shine-style-0305 { width: 40px; height: 50px; }
+.shine-style-0306 { flex: 1; font-family: var(--font-sans); font-size: 13px; color: var(--color-text); }
+.shine-style-0307 { color: var(--color-icon-muted); }
+.shine-style-0308 { margin-top: 28px; }
+.shine-style-0309 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0310 { padding: 4px 24px 12px; }
+.shine-style-0311 { font-family: var(--font-serif); font-size: 26px; font-weight: 400; color: var(--color-text); }
+.shine-style-0312 { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 40px; text-align: center; }
+.shine-style-0313 { width: 28px; height: 1px; background: var(--color-border); margin-bottom: 32px; }
+.shine-style-0314 { font-family: var(--font-serif); font-size: 28px; font-weight: 400; color: var(--color-text); line-height: 1.3; margin-bottom: 16px; }
+.shine-style-0315 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.75; margin-bottom: 40px; }
+.shine-style-0316 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0317 { padding: 4px 24px 12px; }
+.shine-style-0318 { font-family: var(--font-serif); font-size: 26px; font-weight: 400; color: var(--color-text); }
+.shine-style-0319 { flex: 1; overflow-y: auto; padding: 12px 16px; }
+.shine-style-0320 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.shine-style-0321 { padding-top: 10px; padding-bottom: 12px; }
+.shine-style-0322 { color: var(--color-text-muted); }
+.shine-style-0323 { font-family: var(--font-sans); font-size: 11px; color: var(--color-muted-2); }
+.shine-style-0324 { height: 8px; }
+.shine-style-0325 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); position: relative; }
+.shine-style-0326 { flex: 1; opacity: 0.2; padding: 12px 16px; overflow: hidden; }
+.shine-style-0327 { font-family: var(--font-serif); font-size: 26px; color: var(--color-text); margin-bottom: 16px; }
+.shine-style-0328 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.shine-style-0329 { height: 90px; }
+.shine-style-0330 { position: absolute; bottom: 0px; left: 0px; right: 0px; background: #181818; border-top: 1px solid var(--color-border); padding: 32px 24px 44px; }
+.shine-style-0331 { font-family: var(--font-serif); font-size: 24px; font-weight: 400; color: var(--color-text); margin-bottom: 8px; }
+.shine-style-0332 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 28px; }
+.shine-style-0333 { display: flex; flex-direction: column; gap: 10px; }
+.shine-style-0334 { font-family: var(--font-sans); font-size: 13px; color: #C0525F; text-align: center; }
+.shine-style-0335 { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--color-bg); padding: 0 40px; text-align: center; }
+.shine-style-0336 { width: 1px; height: 40px; background: var(--color-accent); margin-bottom: 24px; }
+.shine-style-0337 { font-family: var(--font-serif); font-size: 28px; font-weight: 400; color: var(--color-text); line-height: 1.3; margin-bottom: 12px; }
+.shine-style-0338 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.75; margin-bottom: 40px; }
+.shine-style-0339 { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--color-bg); padding: 0 40px; text-align: center; }
+.shine-style-0340 { color: var(--color-border-strong); margin-bottom: 28px; }
+.shine-style-0341 { font-family: var(--font-serif); font-size: 28px; font-weight: 400; color: var(--color-text); line-height: 1.3; margin-bottom: 12px; }
+.shine-style-0342 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.75; margin-bottom: 40px; }
+.shine-style-0343 { display: flex; align-items: center; gap: 8px; font-family: var(--font-sans); font-size: 13px; letter-spacing: 0.09em; text-transform: uppercase; font-weight: 500; color: var(--color-bg); background: var(--color-text); border: none; padding: 14px 24px; border-radius: 1px; cursor: pointer; }
+.shine-style-0344 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0345 { padding: 4px 24px; }
+.shine-style-0346 { flex: 1; display: flex; flex-direction: column; padding: 0 24px 40px; }
+.shine-style-0347 { flex: 1; }
+.shine-style-0348 { width: 1px; height: 40px; background: var(--color-border); margin-bottom: 24px; }
+.shine-style-0349 { font-family: var(--font-serif); font-size: 28px; font-weight: 400; color: var(--color-text); line-height: 1.35; margin-bottom: 12px; }
+.shine-style-0350 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 40px; }
+.shine-style-0351 { display: flex; flex-direction: column; gap: 10px; }
+.shine-style-0352 { flex: 1; }
+.shine-style-0353 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0354 { display: flex; align-items: center; gap: 12px; padding: 4px 24px; }
+.shine-style-0355 { flex: 1; overflow-y: auto; padding: 16px 24px; }
+.shine-style-0356 { margin-bottom: 16px; }
+.shine-style-0357 { display: flex; flex-direction: column; gap: 8px; margin-bottom: 32px; }
+.shine-style-0358 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text); font-weight: 500; }
+.shine-style-0359 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); margin-top: 2px; }
+.shine-style-0360 { padding-top: 24px; }
+.shine-style-0361 { margin-bottom: 16px; }
+.shine-style-0362 { display: flex; flex-direction: column; gap: 16px; }
+.shine-style-0363 { display: flex; align-items: flex-start; gap: 12px; }
+.shine-style-0364 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text); }
+.shine-style-0365 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0366 { display: flex; align-items: center; gap: 12px; padding: 4px 24px; }
+.shine-style-0367 { font-family: var(--font-serif); font-size: 20px; font-weight: 400; color: var(--color-text); }
+.shine-style-0368 { flex: 1; overflow-y: auto; padding: 0 24px; }
+.shine-style-0369 { padding: 20px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0370 { margin-bottom: 16px; }
+.shine-style-0371 { display: flex; flex-wrap: wrap; gap: 10px; }
+.shine-style-0372 { text-align: center; }
+.shine-style-0373 { font-family: var(--font-sans); font-size: 9px; color: var(--color-muted-2); margin-top: 5px; }
+.shine-style-0374 { padding: 20px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0375 { margin-bottom: 20px; }
+.shine-style-0376 { display: flex; flex-direction: column; gap: 20px; }
+.shine-style-0377 { font-family: var(--font-sans); font-size: 9px; color: var(--color-icon-muted); margin-top: 4px; }
+.shine-style-0378 { padding: 20px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0379 { margin-bottom: 16px; }
+.shine-style-0380 { display: flex; flex-direction: column; gap: 8px; }
+.shine-style-0381 { display: flex; align-items: center; gap: 12px; }
+.shine-style-0382 { font-family: var(--font-sans); font-size: 11px; color: var(--color-muted-2); }
+.shine-style-0383 { padding: 20px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0384 { margin-bottom: 16px; }
+.shine-style-0385 { display: flex; flex-direction: column; gap: 10px; }
+.shine-style-0386 { padding: 20px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0387 { margin-bottom: 14px; }
+.shine-style-0388 { display: flex; flex-wrap: wrap; gap: 8px; }
+.shine-style-0389 { padding: 20px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0390 { margin-bottom: 14px; }
+.shine-style-0391 { display: flex; gap: 8px; }
+.shine-style-0392 { width: 72px; height: 90px; }
+.shine-style-0393 { width: 110px; height: 90px; }
+.shine-style-0394 { flex: 1; height: 90px; }
+.shine-style-0395 { font-family: var(--font-sans); font-size: 10px; color: var(--color-icon-muted); margin-top: 8px; }
+.shine-style-0396 { padding: 20px 0; border-bottom: 1px solid var(--color-border-subtle); }
+.shine-style-0397 { margin-bottom: 14px; }
+.shine-style-0398 { display: flex; gap: 20px; flex-wrap: wrap; color: var(--color-text); }
+.shine-style-0399 { padding: 20px 0; }
+.shine-style-0400 { margin-bottom: 14px; }
+.shine-style-0401 { display: flex; gap: 16px; }
+.shine-style-0402 { font-family: var(--font-sans); font-size: 10px; color: var(--color-muted-2); margin-top: 6px; }
+.shine-style-0403 { height: 40px; }
+.shine-style-0404 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0405 { padding: 4px 24px; }
+.shine-style-0406 { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 40px; }
+.shine-style-0407 { font-family: var(--font-serif); font-size: 34px; font-weight: 400; color: var(--color-text); line-height: 1.15; margin-bottom: 8px; margin-top: 8px; }
+.shine-style-0408 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); margin-bottom: 48px; }
+.shine-style-0409 { flex: 1; }
+.shine-style-0410 { width: 100%; display: flex; align-items: center; gap: 20px; padding: 22px 0; border-top: 1px solid var(--color-border-subtle); background: transparent; cursor: pointer; text-align: left; color: var(--color-text); }
+.shine-style-0411 { font-family: var(--font-sans); font-size: 16px; font-weight: 500; }
+.shine-style-0412 { font-family: var(--font-sans); font-size: 12px; color: var(--color-muted-2); margin-top: 2px; }
+.shine-style-0413 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0414 { display: flex; align-items: center; justify-content: space-between; padding: 4px 24px; }
+.shine-style-0415 { display: flex; gap: 20px; }
+.shine-style-0416 { color: var(--color-text-secondary); background: transparent; border: none; cursor: pointer; }
+.shine-style-0417 { color: var(--color-accent); background: transparent; border: none; cursor: pointer; }
+.shine-style-0418 { flex: 1; overflow-y: auto; }
+.shine-style-0419 { width: 100%; height: 300px; }
+.shine-style-0420 { padding: 20px 24px; }
+.shine-style-0421 { font-family: var(--font-serif); font-size: 26px; font-weight: 400; color: var(--color-text); margin-bottom: 20px; }
+.shine-style-0422 { display: flex; justify-content: space-between; gap: 16px; padding: 13px 0; }
+.shine-style-0423 { font-family: var(--font-sans); font-size: 13px; color: var(--color-muted-2); flex-shrink: 0; }
+.shine-style-0424 { font-family: var(--font-sans); font-size: 13px; color: var(--color-text); text-align: right; }
+.shine-style-0425 { padding-top: 20px; }
+.shine-style-0426 { margin-bottom: 12px; }
+.shine-style-0427 { font-family: var(--font-sans); font-size: 13px; color: var(--color-muted-2); padding: 8px 0; }
+.shine-style-0428 { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 14px 0; background: transparent; border: none; border-bottom: 1px solid var(--color-border-subtle); cursor: pointer; text-align: left; }
+.shine-style-0429 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text); }
+.shine-style-0430 { color: var(--color-icon-muted); }
+.shine-style-0431 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0432 { padding: 4px 24px; }
+.shine-style-0433 { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 40px; }
+.shine-style-0434 { width: 100%; flex: 1; margin-bottom: 32px; }
+.shine-style-0435 { display: flex; align-items: center; gap: 16px; }
+.shine-style-0436 { display: flex; gap: 6px; }
+.shine-style-0437 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-muted); }
+.shine-style-0438 { margin-top: 32px; }
+.shine-style-0439 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0440 { padding: 4px 24px; }
+.shine-style-0441 { flex: 1; display: flex; flex-direction: column; padding: 8px 24px 40px; }
+.shine-style-0442 { width: 100%; height: 240px; margin-bottom: 32px; margin-top: 8px; }
+.shine-style-0443 { width: 1px; height: 32px; background: var(--color-accent); margin-bottom: 24px; }
+.shine-style-0444 { font-family: var(--font-serif); font-size: 28px; font-weight: 400; color: var(--color-text); line-height: 1.3; margin-bottom: 12px; }
+.shine-style-0445 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 40px; }
+.shine-style-0446 { display: flex; flex-direction: column; gap: 12px; }
+.shine-style-0447 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0448 { display: flex; align-items: center; gap: 12px; padding: 4px 24px; }
+.shine-style-0449 { flex: 1; overflow-y: auto; }
+.shine-style-0450 { width: 100%; height: 260px; }
+.shine-style-0451 { padding: 20px 24px; }
+.shine-style-0452 { margin-bottom: 16px; }
+.shine-style-0453 { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+.shine-style-0454 { font-family: var(--font-sans); font-size: 13px; color: var(--color-muted-2); }
+.shine-style-0455 { display: flex; align-items: center; gap: 8px; }
+.shine-style-0456 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text); }
+.shine-style-0457 { color: var(--color-icon-muted); }
+.shine-style-0458 { padding: 16px 24px 28px; }
+.shine-style-0459 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0460 { padding: 4px 24px 12px; }
+.shine-style-0461 { font-family: var(--font-serif); font-size: 26px; font-weight: 400; color: var(--color-text); }
+.shine-style-0462 { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 40px; text-align: center; }
+.shine-style-0463 { width: 1px; height: 56px; background: var(--color-border); margin-bottom: 32px; }
+.shine-style-0464 { font-family: var(--font-serif); font-size: 30px; font-weight: 400; color: var(--color-text); line-height: 1.3; margin-bottom: 16px; }
+.shine-style-0465 { font-family: var(--font-sans); font-size: 14px; color: var(--color-text-secondary); line-height: 1.75; margin-bottom: 40px; }
+.shine-style-0466 { height: 100%; display: flex; flex-direction: column; background: var(--color-bg); }
+.shine-style-0467 { display: flex; align-items: center; justify-content: space-between; padding: 4px 24px 8px; }
+.shine-style-0468 { font-family: var(--font-serif); font-size: 26px; font-weight: 400; color: var(--color-text); }
+.shine-style-0469 { color: var(--color-text); background: transparent; border: none; cursor: pointer; }
+.shine-style-0470 { overflow-x: auto; padding: 0 24px 12px; }
+.shine-style-0471 { display: flex; gap: 8px; width: max-content; }
+.shine-style-0472 { flex: 1; overflow-y: auto; padding: 12px 16px; }
+.shine-style-0473 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.shine-style-0474 { padding: 0px; background: transparent; border: none; text-align: left; cursor: pointer; }
+.shine-style-0475 { width: 100%; aspect-ratio: 3/4; }
+.shine-style-0476 { display: flex; align-items: center; justify-content: space-between; gap: 2px; font-family: var(--font-sans); font-size: 10px; color: var(--color-text-muted); margin-top: 6px; padding-left: 2px; }
+.shine-style-0477 { display: -webkit-box; -webkit-line-clamp: 2px; -webkit-box-orient: vertical; overflow: hidden; }
+.shine-style-0478 { color: var(--color-muted-2); }
+.shine-style-0479 { height: 16px; }

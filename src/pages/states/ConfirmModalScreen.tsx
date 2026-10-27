@@ -48,39 +48,19 @@ export default function ConfirmModalScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-        position: "relative",
-      }}
+      className="shine-style-0325"
     >
       <StatusBar />
       <div
-        style={{
-          flex: 1,
-          opacity: 0.2,
-          padding: "12px 16px",
-          overflow: "hidden",
-        }}
+        className="shine-style-0326"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 26,
-            color: "#F3F0E9",
-            marginBottom: 16,
-          }}
+          className="shine-style-0327"
         >
           Гардероб
         </div>
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            gap: 8,
-          }}
+          className="shine-style-0328"
         >
           {[
             IMGS.itemWhiteShirt,
@@ -90,52 +70,27 @@ export default function ConfirmModalScreen() {
             IMGS.itemBlackBag,
             IMGS.itemGraySuit,
           ].map((src, i) => (
-            <Img key={i} src={src} alt="item" style={{ height: 90 }} />
+            <Img key={i} src={src} alt="item" className="shine-style-0329" />
           ))}
         </div>
       </div>
       <div
-        style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          background: "#181818",
-          borderTop: "1px solid #252525",
-          padding: "32px 24px 44px",
-        }}
+        className="shine-style-0330"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 24,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            marginBottom: 8,
-          }}
+          className="shine-style-0331"
         >
           {text.title}
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 14,
-            color: "#6A6865",
-            lineHeight: 1.7,
-            marginBottom: 28,
-          }}
+          className="shine-style-0332"
         >
           {text.body}
         </div>
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div className="shine-style-0333">
           {error && (
             <div
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 13,
-                color: "#C0525F",
-                textAlign: "center",
-              }}
+              className="shine-style-0334"
             >
               Не удалось удалить. Проверьте, что API запущен.
             </div>

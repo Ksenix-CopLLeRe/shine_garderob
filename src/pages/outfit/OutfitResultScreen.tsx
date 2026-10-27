@@ -38,75 +38,47 @@ export default function OutfitResultScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0173"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "4px 24px",
-        }}
+        className="shine-style-0174"
       >
         <BackBtn onClick={() => ctx.back()} />
         <Caption>{editing ? "Редактирование образа" : "Образ"}</Caption>
-        <div style={{ width: 36, height: 36 }} />
+        <div className="shine-style-0175" />
       </div>
-      <div style={{ flex: 1, overflowY: "auto" }} className="scrollbar-hide">
+      <div  className="scrollbar-hide shine-style-0176">
         {editing && (
           <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-              padding: "10px 16px",
-              background: "#241216",
-              borderTop: "1px solid #6B1F2B",
-              borderBottom: "1px solid #6B1F2B",
-            }}
+            className="shine-style-0177"
           >
-            <div style={{ width: 5, height: 5, background: "#8B2D3B" }} />
+            <div className="shine-style-0178" />
             <div
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 11,
-                color: "#F3F0E9",
-                letterSpacing: "0.04em",
-              }}
+              className="shine-style-0179"
             >
               Режим редактирования · заменить или удалить вещь
             </div>
           </div>
         )}
-        <div style={{ padding: "8px 16px 12px" }}>
-          <div style={{ display: "flex", gap: 8, height: 220 }}>
+        <div className="shine-style-0180">
+          <div className="shine-style-0181">
             <OutfitPiece
               src={IMGS.itemCoat}
               alt="Бежевый тренч"
-              style={{ flex: 1.3, height: "100%" }}
+              className="shine-style-0182"
               editing={editing}
               removed={isRemoved("coat")}
               onReplace={() => ctx.go("replace-item")}
               onRemove={() => removePiece("coat")}
             />
             <div
-              style={{
-                flex: 1,
-                display: "flex",
-                flexDirection: "column",
-                gap: 8,
-              }}
+              className="shine-style-0183"
             >
               <OutfitPiece
                 src={IMGS.itemWhiteShirt}
                 alt="Белая рубашка"
-                style={{ flex: 1 }}
+                className="shine-style-0184"
                 editing={editing}
                 removed={isRemoved("shirt")}
                 onReplace={() => ctx.go("replace-item")}
@@ -115,7 +87,7 @@ export default function OutfitResultScreen() {
               <OutfitPiece
                 src={IMGS.itemBlackJeans}
                 alt="Прямые джинсы"
-                style={{ flex: 1 }}
+                className="shine-style-0185"
                 editing={editing}
                 removed={isRemoved("jeans")}
                 onReplace={() => ctx.go("replace-item")}
@@ -123,11 +95,11 @@ export default function OutfitResultScreen() {
               />
             </div>
           </div>
-          <div style={{ display: "flex", gap: 8, height: 110, marginTop: 8 }}>
+          <div className="shine-style-0186">
             <OutfitPiece
               src={IMGS.itemLoafers}
               alt="Лоферы"
-              style={{ flex: 1 }}
+              className="shine-style-0187"
               editing={editing}
               removed={isRemoved("loafers")}
               onReplace={() => ctx.go("replace-item")}
@@ -136,7 +108,7 @@ export default function OutfitResultScreen() {
             <OutfitPiece
               src={IMGS.itemBlackBag}
               alt="Кожаная сумка"
-              style={{ flex: 0.75 }}
+              className="shine-style-0188"
               editing={editing}
               removed={isRemoved("bag")}
               onReplace={() => ctx.go("replace-item")}
@@ -147,110 +119,60 @@ export default function OutfitResultScreen() {
 
         <Divider />
 
-        <div style={{ padding: "20px 24px 32px" }}>
+        <div className="shine-style-0189">
           <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "flex-start",
-              marginBottom: 8,
-            }}
+            className="shine-style-0190"
           >
             <div
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 26,
-                fontWeight: 400,
-                color: "#F3F0E9",
-                flex: 1,
-                marginRight: 12,
-              }}
+              className="shine-style-0191"
             >
               Дождливый вторник
             </div>
-            <div style={{ textAlign: "right", flexShrink: 0 }}>
+            <div className="shine-style-0192">
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 11,
-                  color: "#5A5855",
-                }}
+                className="shine-style-0193"
               >
                 Учёба
               </div>
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 11,
-                  color: "#5A5855",
-                }}
+                className="shine-style-0194"
               >
                 +14°
               </div>
             </div>
           </div>
           <div
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 13,
-              color: "#8A8680",
-              lineHeight: 1.65,
-              marginBottom: 24,
-            }}
+            className="shine-style-0195"
           >
             Практичный образ под дождь — тренч защитит от погоды, а базовые вещи
             дадут свободу движений.
           </div>
           {editing && (
-            <div style={{ marginBottom: 24 }}>
-              <Caption style={{ marginBottom: 12 }}>Варианты образа</Caption>
+            <div className="shine-style-0196">
+              <Caption className="shine-style-0197">Варианты образа</Caption>
               <div
-                style={{
-                  display: "flex",
-                  gap: 8,
-                  overflowX: "auto",
-                  paddingBottom: 4,
-                }}
-                className="scrollbar-hide"
+                
+                className="scrollbar-hide shine-style-0198"
               >
                 {changeVariants.map((variant) => (
                   <button
                     key={variant.label}
                     onClick={() => ctx.go("outfit-alternative")}
-                    style={{
-                      width: 112,
-                      flexShrink: 0,
-                      padding: 0,
-                      background: "#121212",
-                      border: "1px solid #2A2A2A",
-                      textAlign: "left",
-                      cursor: "pointer",
-                    }}
+                    className="shine-style-0199"
                   >
                     <Img
                       src={variant.image}
                       alt={variant.label}
-                      style={{ width: "100%", height: 78 }}
+                      className="shine-style-0200"
                     />
-                    <div style={{ padding: "8px 8px 9px" }}>
+                    <div className="shine-style-0201">
                       <div
-                        style={{
-                          fontFamily: "'DM Sans', sans-serif",
-                          fontSize: 10,
-                          color: "#F3F0E9",
-                          lineHeight: 1.25,
-                        }}
+                        className="shine-style-0202"
                       >
                         {variant.label}
                       </div>
                       <div
-                        style={{
-                          fontFamily: "'DM Sans', sans-serif",
-                          fontSize: 9,
-                          color: "#6A6865",
-                          lineHeight: 1.3,
-                          marginTop: 3,
-                        }}
+                        className="shine-style-0203"
                       >
                         {variant.sub}
                       </div>
@@ -260,7 +182,7 @@ export default function OutfitResultScreen() {
               </div>
             </div>
           )}
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <div className="shine-style-0204">
             <Btn
               full
               onClick={() =>

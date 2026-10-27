@@ -34,59 +34,31 @@ export default function BottomNav({ active }: { active: string }) {
   ];
   return (
     <div
-      style={{
-        borderTop: "1px solid #252525",
-        background: "#0D0D0D",
-        flexShrink: 0,
-      }}
+      className="shine-style-0004"
     >
-      <div style={{ display: "flex" }}>
+      <div className="shine-style-0005">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => ctx.go(tab.screen)}
-            style={{
-              flex: 1,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: 4,
-              padding: "10px 0 4px",
-              background: "transparent",
-              cursor: "pointer",
-              border: "none",
-              color: active === tab.id ? "#F3F0E9" : "#4A4845",
-              position: "relative",
-            }}
+            className={["bottom-nav__item", active === tab.id && "bottom-nav__item--active"].filter(Boolean).join(" ")}
           >
             {tab.icon}
             <span
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 9,
-                letterSpacing: "0.06em",
-                textTransform: "uppercase",
-              }}
+              className="shine-style-0006"
             >
               {tab.label}
             </span>
             {active === tab.id && (
               <div
-                style={{
-                  width: 3,
-                  height: 3,
-                  borderRadius: "50%",
-                  background: "#6B1F2B",
-                  position: "absolute",
-                  bottom: 4,
-                }}
+                className="shine-style-0007"
               />
             )}
           </button>
         ))}
       </div>
       {/* Home-indicator gap; on a real phone the shell already pads the safe area */}
-      {mode === "framed" && <div style={{ height: 18 }} />}
+      {mode === "framed" && <div className="shine-style-0008" />}
     </div>
   );
 }

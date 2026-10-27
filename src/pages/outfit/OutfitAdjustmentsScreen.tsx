@@ -16,39 +16,21 @@ export default function OutfitAdjustmentsScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0141"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          padding: "4px 24px",
-        }}
+        className="shine-style-0142"
       >
         <BackBtn onClick={() => ctx.back()} />
         <Caption>Корректировка</Caption>
       </div>
       <div
-        style={{ flex: 1, overflowY: "auto", padding: "8px 24px 0" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0143"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 32,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            lineHeight: 1.15,
-            marginBottom: 32,
-            marginTop: 8,
-          }}
+          className="shine-style-0144"
         >
           Как изменить
           <br />
@@ -58,41 +40,21 @@ export default function OutfitAdjustmentsScreen() {
           <button
             key={i}
             onClick={() => ctx.go("outfit-alternative")}
-            style={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              padding: "20px 0",
-              borderBottom: "1px solid #1E1E1E",
-              background: "transparent",
-              cursor: "pointer",
-              textAlign: "left",
-            }}
+            className="shine-style-0145"
           >
             <div>
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 16,
-                  color: "#F3F0E9",
-                  fontWeight: 500,
-                }}
+                className="shine-style-0146"
               >
                 {o.l}
               </div>
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 12,
-                  color: "#5A5855",
-                  marginTop: 3,
-                }}
+                className="shine-style-0147"
               >
                 {o.s}
               </div>
             </div>
-            <div style={{ color: "#3D3D3B" }}>
+            <div className="shine-style-0148">
               <I.ChevronRight />
             </div>
           </button>

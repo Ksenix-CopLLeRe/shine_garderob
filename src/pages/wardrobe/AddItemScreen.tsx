@@ -8,49 +8,26 @@ export default function AddItemScreen() {
   const ctx = useApp();
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0404"
     >
       <StatusBar />
-      <div style={{ padding: "4px 24px" }}>
+      <div className="shine-style-0405">
         <BackBtn onClick={() => ctx.back()} />
       </div>
       <div
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          padding: "8px 24px 40px",
-        }}
+        className="shine-style-0406"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 34,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            lineHeight: 1.15,
-            marginBottom: 8,
-            marginTop: 8,
-          }}
+          className="shine-style-0407"
         >
           Добавить вещь
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 14,
-            color: "#6A6865",
-            marginBottom: 48,
-          }}
+          className="shine-style-0408"
         >
           Shine распознает характеристики автоматически
         </div>
-        <div style={{ flex: 1 }}>
+        <div className="shine-style-0409">
           {[
             { icon: <I.Camera />, l: "Сделать фото", s: "Откроется камера" },
             {
@@ -62,37 +39,17 @@ export default function AddItemScreen() {
             <button
               key={i}
               onClick={() => ctx.go("item-recognition")}
-              style={{
-                width: "100%",
-                display: "flex",
-                alignItems: "center",
-                gap: 20,
-                padding: "22px 0",
-                borderTop: "1px solid #1E1E1E",
-                background: "transparent",
-                cursor: "pointer",
-                textAlign: "left",
-                color: "#F3F0E9",
-              }}
+              className="shine-style-0410"
             >
               {item.icon}
               <div>
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 16,
-                    fontWeight: 500,
-                  }}
+                  className="shine-style-0411"
                 >
                   {item.l}
                 </div>
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 12,
-                    color: "#5A5855",
-                    marginTop: 2,
-                  }}
+                  className="shine-style-0412"
                 >
                   {item.s}
                 </div>

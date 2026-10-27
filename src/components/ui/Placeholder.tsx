@@ -3,38 +3,20 @@ import React from "react";
 /* Gray placeholder — kept for user-uploaded photos and error states */
 export default function Placeholder({
   label,
-  style,
+  className,
   onClick,
 }: {
   label: string;
-  style?: React.CSSProperties;
+  className?: string;
   onClick?: () => void;
 }) {
   return (
     <div
       onClick={onClick}
-      style={{
-        background: "#1A1A1A",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        cursor: onClick ? "pointer" : "default",
-        flexShrink: 0,
-        ...style,
-      }}
+      className={["placeholder", onClick && "placeholder--clickable", className].filter(Boolean).join(" ")}
     >
       <span
-        style={{
-          color: "#3A3A38",
-          fontSize: 10,
-          fontFamily: "'DM Sans', sans-serif",
-          letterSpacing: "0.08em",
-          textTransform: "uppercase",
-          textAlign: "center",
-          padding: "0 10px",
-          whiteSpace: "pre-line",
-          lineHeight: 1.6,
-        }}
+        className="shine-style-0034"
       >
         {label}
       </span>

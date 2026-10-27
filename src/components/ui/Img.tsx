@@ -3,13 +3,13 @@ import React, { useState } from "react";
 export default function Img({
   src,
   alt,
-  style,
+  className,
   onClick,
   overlay,
 }: {
   src: string;
   alt: string;
-  style?: React.CSSProperties;
+  className?: string;
   onClick?: () => void;
   overlay?: boolean;
 }) {
@@ -18,35 +18,19 @@ export default function Img({
   return (
     <div
       onClick={onClick}
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        background: "#1A1A1A",
-        flexShrink: 0,
-        cursor: onClick ? "pointer" : "default",
-        ...style,
-      }}
+      className={["image", onClick && "image--clickable", className].filter(Boolean).join(" ")}
     >
       {!broken && (
         <img
           src={src}
           alt={alt}
           onError={() => setBroken(true)}
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            display: "block",
-          }}
+          className="shine-style-0026"
         />
       )}
       {overlay && (
         <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "rgba(13,13,13,0.35)",
-          }}
+          className="shine-style-0027"
         />
       )}
     </div>

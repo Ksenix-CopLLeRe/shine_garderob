@@ -25,49 +25,29 @@ export default function WardrobeFilledScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0466"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "4px 24px 8px",
-        }}
+        className="shine-style-0467"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 26,
-            fontWeight: 400,
-            color: "#F3F0E9",
-          }}
+          className="shine-style-0468"
         >
           Гардероб
         </div>
         <button
           onClick={() => ctx.go("add-item")}
-          style={{
-            color: "#F3F0E9",
-            background: "transparent",
-            border: "none",
-            cursor: "pointer",
-          }}
+          className="shine-style-0469"
         >
           <I.Plus />
         </button>
       </div>
       <div
-        style={{ overflowX: "auto", padding: "0 24px 12px" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0470"
       >
-        <div style={{ display: "flex", gap: 8, width: "max-content" }}>
+        <div className="shine-style-0471">
           {cats.map((c) => (
             <Tag key={c} active={cat === c} onClick={() => setCat(c)}>
               {c}
@@ -77,58 +57,33 @@ export default function WardrobeFilledScreen() {
       </div>
       <Divider />
       <div
-        style={{ flex: 1, overflowY: "auto", padding: "12px 16px" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0472"
       >
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            gap: 8,
-          }}
+          className="shine-style-0473"
         >
           {things.map((t, i) => (
             <button
               key={i}
               aria-label={`Открыть: ${t.n}`}
               onClick={() => ctx.go("item-card", t.id)}
-              style={{
-                padding: 0,
-                background: "transparent",
-                border: "none",
-                textAlign: "left",
-                cursor: "pointer",
-              }}
+              className="shine-style-0474"
             >
               <Img
                 src={t.img}
                 alt={t.n}
-                style={{ width: "100%", aspectRatio: "3/4" }}
+                className="shine-style-0475"
               />
               <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: 2,
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 10,
-                  color: "#8A8680",
-                  marginTop: 6,
-                  paddingLeft: 2,
-                }}
+                className="shine-style-0476"
               >
                 <span
-                  style={{
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
-                    overflow: "hidden",
-                  }}
+                  className="shine-style-0477"
                 >
                   {t.n}
                 </span>
-                <span style={{ color: "#5A5855" }}>
+                <span className="shine-style-0478">
                   <I.ChevronRight />
                 </span>
               </div>
@@ -138,7 +93,7 @@ export default function WardrobeFilledScreen() {
         {source === "api" && things.length === 0 && (
           <Notice>В этой категории пока нет вещей</Notice>
         )}
-        <div style={{ height: 16 }} />
+        <div className="shine-style-0479" />
       </div>
       <BottomNav active="wardrobe" />
     </div>

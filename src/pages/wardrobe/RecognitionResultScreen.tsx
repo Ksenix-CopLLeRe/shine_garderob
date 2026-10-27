@@ -20,66 +20,43 @@ export default function RecognitionResultScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0447"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          padding: "4px 24px",
-        }}
+        className="shine-style-0448"
       >
         <BackBtn onClick={() => ctx.back()} />
         <Caption>Результат</Caption>
       </div>
-      <div style={{ flex: 1, overflowY: "auto" }} className="scrollbar-hide">
+      <div  className="scrollbar-hide shine-style-0449">
         <Img
           src={IMGS.itemWhiteShirt}
           alt="white shirt"
-          style={{ width: "100%", height: 260 }}
+          className="shine-style-0450"
         />
-        <div style={{ padding: "20px 24px" }}>
-          <Caption style={{ marginBottom: 16 }}>
+        <div className="shine-style-0451">
+          <Caption className="shine-style-0452">
             Характеристики · Нажмите для редактирования
           </Caption>
           {attrs.map((a, i) => (
             <div key={i}>
               {i > 0 && <Divider />}
               <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  padding: "14px 0",
-                }}
+                className="shine-style-0453"
               >
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 13,
-                    color: "#5A5855",
-                  }}
+                  className="shine-style-0454"
                 >
                   {a.k}
                 </div>
-                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <div className="shine-style-0455">
                   <div
-                    style={{
-                      fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 14,
-                      color: "#F3F0E9",
-                    }}
+                    className="shine-style-0456"
                   >
                     {a.v}
                   </div>
-                  <div style={{ color: "#3D3D3B" }}>
+                  <div className="shine-style-0457">
                     <I.Edit />
                   </div>
                 </div>
@@ -89,7 +66,7 @@ export default function RecognitionResultScreen() {
         </div>
       </div>
       <Divider />
-      <div style={{ padding: "16px 24px 28px" }}>
+      <div className="shine-style-0458">
         <Btn full onClick={() => ctx.go("wardrobe-filled")}>
           Добавить в гардероб
         </Btn>

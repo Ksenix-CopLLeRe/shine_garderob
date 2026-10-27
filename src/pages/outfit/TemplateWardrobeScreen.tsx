@@ -12,73 +12,46 @@ export default function TemplateWardrobeScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0229"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          padding: "4px 24px",
-        }}
+        className="shine-style-0230"
       >
         <BackBtn onClick={() => ctx.back()} />
         <Caption>Пример</Caption>
       </div>
       <div
-        style={{ flex: 1, overflowY: "auto", padding: "8px 24px 0" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0231"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 28,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            marginBottom: 4,
-            marginTop: 8,
-          }}
+          className="shine-style-0232"
         >
           Базовый гардероб
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 13,
-            color: "#6A6865",
-            marginBottom: 24,
-          }}
+          className="shine-style-0233"
         >
           5 вещей для любой ситуации
         </div>
         <div
-          style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}
+          className="shine-style-0234"
         >
           {items.map((item, i) => (
             <div
               key={i}
-              style={{ gridColumn: item.span ? "span 2" : undefined }}
+              className={item.span ? "template-wardrobe__item template-wardrobe__item--wide" : "template-wardrobe__item"}
             >
               <Img
                 src={item.img}
                 alt={item.s}
-                style={{ width: "100%", height: item.span ? 180 : 140 }}
+                className={item.span ? "template-wardrobe__image template-wardrobe__image--wide" : "template-wardrobe__image"}
               />
-              <div style={{ paddingTop: 8 }}>
+              <div className="shine-style-0235">
                 <Caption>{item.l}</Caption>
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 13,
-                    color: "#F3F0E9",
-                    marginTop: 2,
-                  }}
+                  className="shine-style-0236"
                 >
                   {item.s}
                 </div>
@@ -86,9 +59,9 @@ export default function TemplateWardrobeScreen() {
             </div>
           ))}
         </div>
-        <div style={{ height: 20 }} />
+        <div className="shine-style-0237" />
       </div>
-      <div style={{ padding: "16px 24px 28px" }}>
+      <div className="shine-style-0238">
         <Btn full onClick={() => ctx.go("outfit-loading")}>
           Подобрать образ из этих вещей
         </Btn>

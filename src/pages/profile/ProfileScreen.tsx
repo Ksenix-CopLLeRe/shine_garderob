@@ -13,62 +13,36 @@ export default function ProfileScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0251"
     >
       <StatusBar />
-      <div style={{ flex: 1, overflowY: "auto" }} className="scrollbar-hide">
+      <div  className="scrollbar-hide shine-style-0252">
         {/* Large editorial portrait */}
-        <div style={{ position: "relative" }}>
+        <div className="shine-style-0253">
           <Img
             src={IMGS.portraitBlazer}
             alt="user portrait"
-            style={{ width: "100%", height: 300 }}
+            className="shine-style-0254"
           />
           <div
-            style={{
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              right: 0,
-              background: "linear-gradient(to top, #0D0D0D 20%, transparent)",
-              padding: "60px 24px 16px",
-            }}
+            className="shine-style-0255"
           >
             <div
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 32,
-                fontWeight: 400,
-                color: "#F3F0E9",
-              }}
+              className="shine-style-0256"
             >
               {name}
             </div>
             <div
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 12,
-                color: "#8A8680",
-                marginTop: 4,
-              }}
+              className="shine-style-0257"
             >
               Минимализм · Кэжуал · Работа
             </div>
           </div>
         </div>
 
-        <div style={{ padding: "0 24px" }}>
+        <div className="shine-style-0258">
           <div
-            style={{
-              display: "flex",
-              borderBottom: "1px solid #1E1E1E",
-              marginBottom: 8,
-            }}
+            className="shine-style-0259"
           >
             {[
               { n: "24", l: "Вещей" },
@@ -77,24 +51,14 @@ export default function ProfileScreen() {
             ].map((s, i) => (
               <div
                 key={i}
-                style={{
-                  flex: 1,
-                  padding: "20px 0",
-                  textAlign: "center",
-                  borderRight: i < 2 ? "1px solid #1E1E1E" : "none",
-                }}
+                className={["profile-stat", i < 2 && "profile-stat--divided"].filter(Boolean).join(" ")}
               >
                 <div
-                  style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: 30,
-                    fontWeight: 400,
-                    color: "#F3F0E9",
-                  }}
+                  className="shine-style-0260"
                 >
                   {s.n}
                 </div>
-                <Caption style={{ marginTop: 4 }}>{s.l}</Caption>
+                <Caption className="shine-style-0261">{s.l}</Caption>
               </div>
             ))}
           </div>
@@ -105,32 +69,19 @@ export default function ProfileScreen() {
             <button
               key={item.l}
               onClick={() => ctx.go(item.sc)}
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: "18px 0",
-                borderBottom: "1px solid #1E1E1E",
-                background: "transparent",
-                cursor: "pointer",
-              }}
+              className="shine-style-0262"
             >
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 15,
-                  color: "#F3F0E9",
-                }}
+                className="shine-style-0263"
               >
                 {item.l}
               </div>
-              <div style={{ color: "#3D3D3B" }}>
+              <div className="shine-style-0264">
                 <I.ChevronRight />
               </div>
             </button>
           ))}
-          <div style={{ height: 8 }} />
+          <div className="shine-style-0265" />
         </div>
       </div>
       <BottomNav active="profile" />

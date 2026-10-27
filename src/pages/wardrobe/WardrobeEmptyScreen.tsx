@@ -8,66 +8,30 @@ export default function WardrobeEmptyScreen() {
   const ctx = useApp();
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0459"
     >
       <StatusBar />
-      <div style={{ padding: "4px 24px 12px" }}>
+      <div className="shine-style-0460">
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 26,
-            fontWeight: 400,
-            color: "#F3F0E9",
-          }}
+          className="shine-style-0461"
         >
           Гардероб
         </div>
       </div>
       <Divider />
       <div
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "0 40px",
-          textAlign: "center",
-        }}
+        className="shine-style-0462"
       >
         <div
-          style={{
-            width: 1,
-            height: 56,
-            background: "#252525",
-            marginBottom: 32,
-          }}
+          className="shine-style-0463"
         />
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 30,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            lineHeight: 1.3,
-            marginBottom: 16,
-          }}
+          className="shine-style-0464"
         >
           Здесь пока пусто
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 14,
-            color: "#6A6865",
-            lineHeight: 1.75,
-            marginBottom: 40,
-          }}
+          className="shine-style-0465"
         >
           Добавьте первые вещи — Shine начнёт собирать образы из вашего
           гардероба

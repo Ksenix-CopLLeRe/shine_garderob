@@ -21,36 +21,17 @@ export default function OutfitDetailScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0287"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "4px 24px",
-        }}
+        className="shine-style-0288"
       >
         <BackBtn onClick={() => ctx.back()} />
         <button
           disabled={!outfit}
           onClick={() => ctx.go("confirm-modal", id && `outfit:${id}`)}
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 12,
-            color: "#6B1F2B",
-            letterSpacing: "0.07em",
-            textTransform: "uppercase",
-            background: "transparent",
-            border: "none",
-            cursor: "pointer",
-          }}
+          className="shine-style-0289"
         >
           Удалить
         </button>
@@ -59,29 +40,24 @@ export default function OutfitDetailScreen() {
         <Notice>Не удалось загрузить образ. Возможно, он удалён.</Notice>
       )}
       {outfit && (
-        <div style={{ flex: 1, overflowY: "auto" }} className="scrollbar-hide">
-          <div style={{ padding: "8px 16px 12px" }}>
-            <div style={{ display: "flex", gap: 8, height: 220 }}>
+        <div  className="scrollbar-hide shine-style-0290">
+          <div className="shine-style-0291">
+            <div className="shine-style-0292">
               <Img
                 src={outfit.cover}
                 alt={outfit.name}
-                style={{ flex: 1.2, height: "100%" }}
+                className="shine-style-0293"
               />
               {side.length > 0 && (
                 <div
-                  style={{
-                    flex: 1,
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: 8,
-                  }}
+                  className="shine-style-0294"
                 >
                   {side.map((p, i) => (
                     <Img
                       key={p.id ?? i}
                       src={p.img}
                       alt={p.name}
-                      style={{ flex: 1 }}
+                      className="shine-style-0295"
                     />
                   ))}
                 </div>
@@ -89,66 +65,44 @@ export default function OutfitDetailScreen() {
             </div>
             {bottom.length > 0 && (
               <div
-                style={{ display: "flex", gap: 8, height: 100, marginTop: 8 }}
+                className="shine-style-0296"
               >
                 {bottom.map((p, i) => (
                   <Img
                     key={p.id ?? i}
                     src={p.img}
                     alt={p.name}
-                    style={{ flex: 1 }}
+                    className="shine-style-0297"
                   />
                 ))}
               </div>
             )}
           </div>
           <Divider />
-          <div style={{ padding: "20px 24px 32px" }}>
+          <div className="shine-style-0298">
             <div
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 26,
-                fontWeight: 400,
-                color: "#F3F0E9",
-                marginBottom: 8,
-              }}
+              className="shine-style-0299"
             >
               {outfit.name}
             </div>
             <div
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 13,
-                color: "#5A5855",
-                marginBottom: outfit.comment ? 12 : 24,
-              }}
+              className={["outfit-detail__subtitle", outfit.comment ? "outfit-detail__subtitle--with-comment" : "outfit-detail__subtitle--without-comment"].join(" ")}
             >
               {outfit.subtitle}
             </div>
             {outfit.comment && (
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 14,
-                  lineHeight: 1.6,
-                  color: "#B8B4AC",
-                  marginBottom: 24,
-                }}
+                className="shine-style-0300"
               >
                 {outfit.comment}
               </div>
             )}
             <Divider />
-            <div style={{ paddingTop: 20 }}>
-              <Caption style={{ marginBottom: 14 }}>Вещи</Caption>
+            <div className="shine-style-0301">
+              <Caption className="shine-style-0302">Вещи</Caption>
               {source === "api" && outfit.items.length < 2 && (
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 13,
-                    color: "#8A8680",
-                    paddingBottom: 8,
-                  }}
+                  className="shine-style-0303"
                 >
                   Часть вещей удалена из гардероба
                 </div>
@@ -157,41 +111,25 @@ export default function OutfitDetailScreen() {
                 <button
                   key={p.id ?? i}
                   onClick={() => ctx.go("item-card", p.id)}
-                  style={{
-                    width: "100%",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 12,
-                    padding: "12px 0",
-                    background: "transparent",
-                    border: "none",
-                    borderBottom: "1px solid #1E1E1E",
-                    cursor: "pointer",
-                    textAlign: "left",
-                  }}
+                  className="shine-style-0304"
                 >
                   <Img
                     src={p.img}
                     alt={p.name}
-                    style={{ width: 40, height: 50 }}
+                    className="shine-style-0305"
                   />
                   <div
-                    style={{
-                      flex: 1,
-                      fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 13,
-                      color: "#F3F0E9",
-                    }}
+                    className="shine-style-0306"
                   >
                     {p.name}
                   </div>
-                  <span style={{ color: "#3D3D3B" }}>
+                  <span className="shine-style-0307">
                     <I.ChevronRight />
                   </span>
                 </button>
               ))}
             </div>
-            <div style={{ marginTop: 28 }}>
+            <div className="shine-style-0308">
               <Btn full onClick={() => ctx.go("outfit-loading")}>
                 Повторить образ
               </Btn>

@@ -8,60 +8,30 @@ export default function RegisterScreen() {
   const ctx = useApp();
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0045"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "4px 24px",
-        }}
+        className="shine-style-0046"
       >
         <BackBtn onClick={() => ctx.back()} />
         <button
           onClick={() => ctx.go("login")}
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 12,
-            color: "#5A5855",
-            letterSpacing: "0.06em",
-            background: "transparent",
-            border: "none",
-            cursor: "pointer",
-          }}
+          className="shine-style-0047"
         >
           Войти
         </button>
       </div>
       <div
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          padding: "12px 24px 40px",
-        }}
+        className="shine-style-0048"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 38,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            marginBottom: 40,
-            marginTop: 8,
-          }}
+          className="shine-style-0049"
         >
           Регистрация
         </div>
         <div
-          style={{ flex: 1, display: "flex", flexDirection: "column", gap: 32 }}
+          className="shine-style-0050"
         >
           {[
             { l: "Имя", p: "Ваше имя", t: "text" },
@@ -69,21 +39,11 @@ export default function RegisterScreen() {
             { l: "Пароль", p: "••••••••", t: "password" },
           ].map((f) => (
             <div key={f.l}>
-              <Caption style={{ marginBottom: 8 }}>{f.l}</Caption>
+              <Caption className="shine-style-0051">{f.l}</Caption>
               <input
                 type={f.t}
                 placeholder={f.p}
-                style={{
-                  width: "100%",
-                  background: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid #2A2A2A",
-                  padding: "12px 0",
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 16,
-                  color: "#F3F0E9",
-                  outline: "none",
-                }}
+                className="shine-style-0052"
               />
             </div>
           ))}

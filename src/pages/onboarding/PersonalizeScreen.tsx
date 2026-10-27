@@ -10,119 +10,58 @@ export default function PersonalizeScreen() {
   const [name, setName] = useState("");
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0101"
     >
       <StatusBar />
       <div
-        style={{
-          flex: 1,
-          display: "flex",
-          flexDirection: "column",
-          padding: "8px 24px 32px",
-        }}
+        className="shine-style-0102"
       >
         <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            marginBottom: 28,
-          }}
+          className="shine-style-0103"
         >
           <button
             onClick={() => {
               ctx.setAuth(true);
               ctx.go("home-auth");
             }}
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 12,
-              color: "#5A5855",
-              letterSpacing: "0.07em",
-              textTransform: "uppercase",
-              background: "transparent",
-              border: "none",
-              cursor: "pointer",
-            }}
+            className="shine-style-0104"
           >
             Пропустить
           </button>
         </div>
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 38,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            lineHeight: 1.15,
-            marginBottom: 16,
-          }}
+          className="shine-style-0105"
         >
           Сделаем
           <br />
           <em>Shine</em> вашим
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 14,
-            color: "#6A6865",
-            lineHeight: 1.7,
-            marginBottom: 40,
-          }}
+          className="shine-style-0106"
         >
           Фото персонализирует ваше пространство. Это не виртуальная примерка —
           образы показываются как коллаж вещей.
         </div>
         <div
-          style={{
-            flex: 1,
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-          }}
+          className="shine-style-0107"
         >
-          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+          <div className="shine-style-0108">
             <button
               onClick={() => ctx.go("photo-upload")}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 16,
-                padding: 16,
-                border: "1px solid #2A2A2A",
-                background: "transparent",
-                cursor: "pointer",
-                textAlign: "left",
-                borderRadius: 1,
-              }}
+              className="shine-style-0109"
             >
               <Placeholder
                 label="Фото"
-                style={{ width: 52, height: 52, flexShrink: 0 }}
+                className="shine-style-0110"
               />
               <div>
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 14,
-                    color: "#F3F0E9",
-                    fontWeight: 500,
-                  }}
+                  className="shine-style-0111"
                 >
                   Добавить фото
                 </div>
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 12,
-                    color: "#5A5855",
-                    marginTop: 2,
-                  }}
+                  className="shine-style-0112"
                 >
                   Оставайтесь собой в профиле
                 </div>
@@ -137,18 +76,7 @@ export default function PersonalizeScreen() {
                   ctx.setUserName(e.target.value);
                 }}
                 placeholder="Как вас называть?"
-                style={{
-                  width: "100%",
-                  background: "transparent",
-                  border: "none",
-                  borderBottom: "1px solid #2A2A2A",
-                  padding: "12px 0",
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 16,
-                  color: "#F3F0E9",
-                  outline: "none",
-                  marginTop: 8,
-                }}
+                className="shine-style-0113"
               />
             </div>
           </div>

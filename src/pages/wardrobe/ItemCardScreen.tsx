@@ -15,43 +15,23 @@ export default function ItemCardScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0413"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          padding: "4px 24px",
-        }}
+        className="shine-style-0414"
       >
         <BackBtn onClick={() => ctx.back()} />
-        <div style={{ display: "flex", gap: 20 }}>
+        <div className="shine-style-0415">
           <button
-            style={{
-              color: "#6A6865",
-              background: "transparent",
-              border: "none",
-              cursor: "pointer",
-            }}
+            className="shine-style-0416"
           >
             <I.Edit />
           </button>
           <button
             aria-label="Удалить вещь"
             disabled={!item}
-            style={{
-              color: "#6B1F2B",
-              background: "transparent",
-              border: "none",
-              cursor: "pointer",
-            }}
+            className="shine-style-0417"
             onClick={() => ctx.go("confirm-modal", id && `item:${id}`)}
           >
             <I.Trash />
@@ -62,21 +42,15 @@ export default function ItemCardScreen() {
         <Notice>Не удалось загрузить вещь. Возможно, она удалена.</Notice>
       )}
       {item && (
-        <div style={{ flex: 1, overflowY: "auto" }} className="scrollbar-hide">
+        <div  className="scrollbar-hide shine-style-0418">
           <Img
             src={item.img}
             alt={item.name}
-            style={{ width: "100%", height: 300 }}
+            className="shine-style-0419"
           />
-          <div style={{ padding: "20px 24px" }}>
+          <div className="shine-style-0420">
             <div
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 26,
-                fontWeight: 400,
-                color: "#F3F0E9",
-                marginBottom: 20,
-              }}
+              className="shine-style-0421"
             >
               {item.name}
             </div>
@@ -84,30 +58,15 @@ export default function ItemCardScreen() {
               <div key={a.k}>
                 {i > 0 && <Divider />}
                 <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    gap: 16,
-                    padding: "13px 0",
-                  }}
+                  className="shine-style-0422"
                 >
                   <div
-                    style={{
-                      fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 13,
-                      color: "#5A5855",
-                      flexShrink: 0,
-                    }}
+                    className="shine-style-0423"
                   >
                     {a.k}
                   </div>
                   <div
-                    style={{
-                      fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 13,
-                      color: "#F3F0E9",
-                      textAlign: "right",
-                    }}
+                    className="shine-style-0424"
                   >
                     {a.v}
                   </div>
@@ -115,18 +74,13 @@ export default function ItemCardScreen() {
               </div>
             ))}
             <Divider />
-            <div style={{ paddingTop: 20 }}>
-              <Caption style={{ marginBottom: 12 }}>
+            <div className="shine-style-0425">
+              <Caption className="shine-style-0426">
                 Используется в образах
               </Caption>
               {item.outfits.length === 0 && (
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 13,
-                    color: "#5A5855",
-                    padding: "8px 0",
-                  }}
+                  className="shine-style-0427"
                 >
                   Пока не используется в образах
                 </div>
@@ -135,29 +89,14 @@ export default function ItemCardScreen() {
                 <button
                   key={o.id ?? i}
                   onClick={() => ctx.go("outfit-detail", o.id)}
-                  style={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    padding: "14px 0",
-                    background: "transparent",
-                    border: "none",
-                    borderBottom: "1px solid #1E1E1E",
-                    cursor: "pointer",
-                    textAlign: "left",
-                  }}
+                  className="shine-style-0428"
                 >
                   <div
-                    style={{
-                      fontFamily: "'DM Sans', sans-serif",
-                      fontSize: 14,
-                      color: "#F3F0E9",
-                    }}
+                    className="shine-style-0429"
                   >
                     {o.name}
                   </div>
-                  <div style={{ color: "#3D3D3B" }}>
+                  <div className="shine-style-0430">
                     <I.ChevronRight />
                   </div>
                 </button>

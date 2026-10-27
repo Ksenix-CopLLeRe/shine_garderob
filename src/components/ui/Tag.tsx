@@ -12,20 +12,7 @@ export default function Tag({
   return (
     <button
       onClick={onClick}
-      style={{
-        fontFamily: "'DM Sans', sans-serif",
-        fontSize: 11,
-        letterSpacing: "0.07em",
-        textTransform: "uppercase",
-        padding: "7px 14px",
-        borderRadius: 1,
-        border: "1px solid",
-        borderColor: active ? "#F3F0E9" : "#2A2A2A",
-        color: active ? "#F3F0E9" : "#5A5855",
-        background: "transparent",
-        cursor: "pointer",
-        whiteSpace: "nowrap",
-      }}
+      className={["tag", active && "tag--active"].filter(Boolean).join(" ")}
     >
       {children}
     </button>

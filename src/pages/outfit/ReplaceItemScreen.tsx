@@ -13,125 +13,71 @@ export default function ReplaceItemScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0205"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          padding: "4px 24px",
-        }}
+        className="shine-style-0206"
       >
         <BackBtn onClick={() => ctx.back()} />
         <Caption>Замена вещи</Caption>
       </div>
       <div
-        style={{ flex: 1, overflowY: "auto", padding: "8px 24px 0" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0207"
       >
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 13,
-            color: "#6A6865",
-            marginBottom: 20,
-          }}
+          className="shine-style-0208"
         >
           Выберите замену для{" "}
-          <span style={{ color: "#F3F0E9" }}>Белой рубашки</span> — применим её
+          <span className="shine-style-0209">Белой рубашки</span> — применим её
           сразу
         </div>
         <div
-          style={{
-            display: "flex",
-            gap: 16,
-            marginBottom: 24,
-            paddingBottom: 20,
-            borderBottom: "1px solid #1E1E1E",
-          }}
+          className="shine-style-0210"
         >
           <Img
             src={IMGS.itemWhiteShirt}
             alt="white shirt"
-            style={{ width: 80, height: 100 }}
+            className="shine-style-0211"
           />
           <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
+            className="shine-style-0212"
           >
             <div
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 11,
-                color: "#5A5855",
-                marginBottom: 4,
-              }}
+              className="shine-style-0213"
             >
               Текущая вещь
             </div>
             <div
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                fontSize: 15,
-                color: "#F3F0E9",
-              }}
+              className="shine-style-0214"
             >
               Белая рубашка
             </div>
           </div>
         </div>
-        <Caption style={{ marginBottom: 16 }}>
+        <Caption className="shine-style-0215">
           Альтернативы из гардероба
         </Caption>
         <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 10,
-            paddingBottom: 24,
-          }}
+          className="shine-style-0216"
         >
           {alts.map((a, i) => (
             <button
               key={i}
               onClick={() => ctx.go("outfit-result")}
-              style={{
-                padding: 0,
-                background: "#121212",
-                border: "1px solid #2A2A2A",
-                textAlign: "left",
-                cursor: "pointer",
-              }}
+              className="shine-style-0217"
             >
               <Img
                 src={a.img}
                 alt={a.n}
-                style={{ width: "100%", height: 130 }}
+                className="shine-style-0218"
               />
               <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: 4,
-                  padding: "9px 8px",
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 11,
-                  color: "#F3F0E9",
-                }}
+                className="shine-style-0219"
               >
                 <span>{a.n}</span>
-                <span style={{ color: "#8A8680" }}>
+                <span className="shine-style-0220">
                   <I.ChevronRight />
                 </span>
               </div>

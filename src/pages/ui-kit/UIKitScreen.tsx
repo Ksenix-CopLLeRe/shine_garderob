@@ -13,70 +13,43 @@ export default function UIKitScreen() {
   const ctx = useApp();
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0365"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          padding: "4px 24px",
-        }}
+        className="shine-style-0366"
       >
         <BackBtn onClick={() => ctx.back()} />
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 20,
-            fontWeight: 400,
-            color: "#F3F0E9",
-          }}
+          className="shine-style-0367"
         >
           Shine UI Kit
         </div>
       </div>
       <div
-        style={{ flex: 1, overflowY: "auto", padding: "0 24px" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0368"
       >
         <section
-          style={{ padding: "20px 0", borderBottom: "1px solid #1E1E1E" }}
+          className="shine-style-0369"
         >
-          <Caption style={{ marginBottom: 16 }}>01 — Цвета</Caption>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 10 }}>
+          <Caption className="shine-style-0370">01 — Цвета</Caption>
+          <div className="shine-style-0371">
             {[
-              { c: "#0D0D0D", l: "BG", b: true },
-              { c: "#171717", l: "BG2" },
-              { c: "#1D1D1D", l: "BG3" },
-              { c: "#F3F0E9", l: "FG" },
-              { c: "#8A8680", l: "FG2" },
-              { c: "#4A4845", l: "FG3" },
-              { c: "#6B1F2B", l: "Accent" },
-              { c: "#8B2D3B", l: "Accent2" },
-              { c: "#252525", l: "Border" },
+              { tone: "bg", l: "BG", b: true },
+              { tone: "bg2", l: "BG2" },
+              { tone: "bg3", l: "BG3" },
+              { tone: "fg", l: "FG" },
+              { tone: "fg2", l: "FG2" },
+              { tone: "fg3", l: "FG3" },
+              { tone: "accent", l: "Accent" },
+              { tone: "accent2", l: "Accent2" },
+              { tone: "border", l: "Border" },
             ].map((col) => (
-              <div key={col.l} style={{ textAlign: "center" }}>
+              <div key={col.l} className="shine-style-0372">
+                <div className={["ui-swatch", `ui-swatch--${col.tone}`, col.b && "ui-swatch--bordered"].filter(Boolean).join(" ")} />
                 <div
-                  style={{
-                    width: 44,
-                    height: 44,
-                    background: col.c,
-                    border: col.b ? "1px solid #252525" : "none",
-                  }}
-                />
-                <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 9,
-                    color: "#5A5855",
-                    marginTop: 5,
-                  }}
+                  className="shine-style-0373"
                 >
                   {col.l}
                 </div>
@@ -86,73 +59,43 @@ export default function UIKitScreen() {
         </section>
 
         <section
-          style={{ padding: "20px 0", borderBottom: "1px solid #1E1E1E" }}
+          className="shine-style-0374"
         >
-          <Caption style={{ marginBottom: 20 }}>02 — Типографика</Caption>
-          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          <Caption className="shine-style-0375">02 — Типографика</Caption>
+          <div className="shine-style-0376">
             {[
               {
-                f: "'Playfair Display', serif",
-                sz: 50,
-                fw: 400,
-                fi: false,
+                variant: "display",
                 t: "Display",
                 i: "Playfair · 50 · 400",
               },
               {
-                f: "'Playfair Display', serif",
-                sz: 34,
-                fw: 400,
-                fi: true,
+                variant: "heading-italic",
                 t: "Heading Italic",
                 i: "Playfair · 34 · Italic",
               },
               {
-                f: "'Playfair Display', serif",
-                sz: 22,
-                fw: 400,
-                fi: false,
+                variant: "section",
                 t: "Section Title",
                 i: "Playfair · 22 · 400",
               },
               {
-                f: "'DM Sans', sans-serif",
-                sz: 16,
-                fw: 500,
-                fi: false,
+                variant: "body-medium",
                 t: "Body Medium",
                 i: "DM Sans · 16 · 500",
               },
               {
-                f: "'DM Sans', sans-serif",
-                sz: 14,
-                fw: 400,
-                fi: false,
+                variant: "body-regular",
                 t: "Body Regular",
                 i: "DM Sans · 14 · 400",
-                c: "#8A8680",
               },
             ].map((ty, i) => (
               <div key={i}>
-                <div
-                  style={{
-                    fontFamily: ty.f,
-                    fontSize: ty.sz,
-                    fontWeight: ty.fw,
-                    fontStyle: ty.fi ? "italic" : "normal",
-                    color: (ty as { c?: string }).c || "#F3F0E9",
-                    lineHeight: 1,
-                  }}
-                >
+                <div className={`ui-type-sample ui-type-sample--${ty.variant}`}>
                   {ty.t}
                 </div>
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 9,
-                    color: "#3D3D3B",
-                    marginTop: 4,
-                  }}
+                  className="shine-style-0377"
                 >
                   {ty.i}
                 </div>
@@ -165,29 +108,18 @@ export default function UIKitScreen() {
         </section>
 
         <section
-          style={{ padding: "20px 0", borderBottom: "1px solid #1E1E1E" }}
+          className="shine-style-0378"
         >
-          <Caption style={{ marginBottom: 16 }}>03 — Отступы</Caption>
-          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+          <Caption className="shine-style-0379">03 — Отступы</Caption>
+          <div className="shine-style-0380">
             {[4, 8, 12, 16, 24, 32, 40, 48, 64].map((s) => (
               <div
                 key={s}
-                style={{ display: "flex", alignItems: "center", gap: 12 }}
+                className="shine-style-0381"
               >
+                <div className={`ui-space-bar ui-space-bar--${s}`} />
                 <div
-                  style={{
-                    width: s,
-                    height: 4,
-                    background: "#6B1F2B",
-                    flexShrink: 0,
-                  }}
-                />
-                <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 11,
-                    color: "#5A5855",
-                  }}
+                  className="shine-style-0382"
                 >
                   {s}px
                 </div>
@@ -197,10 +129,10 @@ export default function UIKitScreen() {
         </section>
 
         <section
-          style={{ padding: "20px 0", borderBottom: "1px solid #1E1E1E" }}
+          className="shine-style-0383"
         >
-          <Caption style={{ marginBottom: 16 }}>04 — Кнопки</Caption>
-          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <Caption className="shine-style-0384">04 — Кнопки</Caption>
+          <div className="shine-style-0385">
             <Btn full>Primary — Подобрать образ</Btn>
             <Btn full variant="secondary">
               Secondary — Другой вариант
@@ -215,10 +147,10 @@ export default function UIKitScreen() {
         </section>
 
         <section
-          style={{ padding: "20px 0", borderBottom: "1px solid #1E1E1E" }}
+          className="shine-style-0386"
         >
-          <Caption style={{ marginBottom: 14 }}>05 — Теги и фильтры</Caption>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+          <Caption className="shine-style-0387">05 — Теги и фильтры</Caption>
+          <div className="shine-style-0388">
             <Tag>Обычный</Tag>
             <Tag active>Активный</Tag>
             <Tag>Работа</Tag>
@@ -228,29 +160,24 @@ export default function UIKitScreen() {
         </section>
 
         <section
-          style={{ padding: "20px 0", borderBottom: "1px solid #1E1E1E" }}
+          className="shine-style-0389"
         >
-          <Caption style={{ marginBottom: 14 }}>06 — Изображения</Caption>
-          <div style={{ display: "flex", gap: 8 }}>
+          <Caption className="shine-style-0390">06 — Изображения</Caption>
+          <div className="shine-style-0391">
             <Img
               src={IMGS.itemWhiteShirt}
               alt="item"
-              style={{ width: 72, height: 90 }}
+              className="shine-style-0392"
             />
             <Img
               src={IMGS.editorialBlazer}
               alt="outfit"
-              style={{ width: 110, height: 90 }}
+              className="shine-style-0393"
             />
-            <Placeholder label={"Фото\nпользователя"} style={{ flex: 1, height: 90 }} />
+            <Placeholder label={"Фото\nпользователя"} className="shine-style-0394" />
           </div>
           <div
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 10,
-              color: "#3D3D3B",
-              marginTop: 8,
-            }}
+            className="shine-style-0395"
           >
             Img — реальные Unsplash фото · Ph — плейсхолдер для пользовательских
             фото
@@ -258,18 +185,13 @@ export default function UIKitScreen() {
         </section>
 
         <section
-          style={{ padding: "20px 0", borderBottom: "1px solid #1E1E1E" }}
+          className="shine-style-0396"
         >
-          <Caption style={{ marginBottom: 14 }}>
+          <Caption className="shine-style-0397">
             07 — Иконки (outline, 1.5px)
           </Caption>
           <div
-            style={{
-              display: "flex",
-              gap: 20,
-              flexWrap: "wrap",
-              color: "#F3F0E9",
-            }}
+            className="shine-style-0398"
           >
             <I.Home />
             <I.Hanger />
@@ -289,30 +211,17 @@ export default function UIKitScreen() {
           </div>
         </section>
 
-        <section style={{ padding: "20px 0" }}>
-          <Caption style={{ marginBottom: 14 }}>08 — Скругления</Caption>
-          <div style={{ display: "flex", gap: 16 }}>
+        <section className="shine-style-0399">
+          <Caption className="shine-style-0400">08 — Скругления</Caption>
+          <div className="shine-style-0401">
             {[
-              { r: 0, l: "0px — основной" },
-              { r: 2, l: "2px — мелкие" },
+              { radius: "none", l: "0px — основной" },
+              { radius: "sm", l: "2px — мелкие" },
             ].map((c) => (
               <div key={c.l}>
+                <div className={`ui-radius-sample ui-radius-sample--${c.radius}`} />
                 <div
-                  style={{
-                    width: 64,
-                    height: 44,
-                    background: "#1A1A1A",
-                    borderRadius: c.r,
-                    border: "1px solid #252525",
-                  }}
-                />
-                <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 10,
-                    color: "#5A5855",
-                    marginTop: 6,
-                  }}
+                  className="shine-style-0402"
                 >
                   {c.l}
                 </div>
@@ -321,7 +230,7 @@ export default function UIKitScreen() {
           </div>
         </section>
 
-        <div style={{ height: 40 }} />
+        <div className="shine-style-0403" />
       </div>
     </div>
   );

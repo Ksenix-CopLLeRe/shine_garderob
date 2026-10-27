@@ -12,42 +12,25 @@ export default function SituationScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0221"
     >
       <StatusBar />
-      <div style={{ padding: "4px 24px" }}>
+      <div className="shine-style-0222">
         <BackBtn onClick={() => ctx.back()} />
       </div>
       <div
-        style={{ flex: 1, overflowY: "auto", padding: "8px 24px 0" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0223"
       >
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 38,
-            fontWeight: 400,
-            color: "#F3F0E9",
-            lineHeight: 1.1,
-            marginBottom: 8,
-          }}
+          className="shine-style-0224"
         >
           Куда
           <br />
           собираетесь?
         </div>
         <div
-          style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: 13,
-            color: "#6A6865",
-            marginBottom: 28,
-          }}
+          className="shine-style-0225"
         >
           Выберите ситуацию для образа
         </div>
@@ -55,66 +38,27 @@ export default function SituationScreen() {
           <button
             key={s.id}
             onClick={() => setSelected(s.id)}
-            style={{
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              gap: 16,
-              padding: `${i === 0 ? 20 : 16}px 12px`,
-              border: "none",
-              borderBottom: "1px solid #1E1E1E",
-              borderLeft:
-                selected === s.id
-                  ? "2px solid #6B1F2B"
-                  : "2px solid transparent",
-              background: "transparent",
-              textAlign: "left",
-              cursor: "pointer",
-            }}
+            className={["situation-option", i === 0 && "situation-option--lead", selected === s.id && "situation-option--selected"].filter(Boolean).join(" ")}
           >
             <div>
               <div
-                style={{
-                  fontFamily: "'Playfair Display', serif",
-                  fontSize: i === 0 ? 34 : i < 3 ? 26 : 22,
-                  fontWeight: 400,
-                  color: "#F3F0E9",
-                }}
+                className={`situation-option__title situation-option__title--${i === 0 ? "lead" : i < 3 ? "medium" : "small"}`}
               >
                 {s.l}
               </div>
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 11,
-                  color: "#5A5855",
-                  marginTop: 3,
-                }}
+                className="shine-style-0226"
               >
                 {s.s}
               </div>
             </div>
             <div
               aria-hidden="true"
-              style={{
-                width: 18,
-                height: 18,
-                border: `1px solid ${selected === s.id ? "#F3F0E9" : "#4A4845"}`,
-                borderRadius: "50%",
-                display: "grid",
-                placeItems: "center",
-                flexShrink: 0,
-              }}
+              className={["radio", selected === s.id && "radio--selected"].filter(Boolean).join(" ")}
             >
               {selected === s.id && (
                 <div
-                  style={{
-                    width: 8,
-                    height: 8,
-                    borderRadius: "50%",
-                    background: "#6B1F2B",
-                  }}
+                  className="shine-style-0227"
                 />
               )}
             </div>
@@ -122,7 +66,7 @@ export default function SituationScreen() {
         ))}
       </div>
       {selected && (
-        <div style={{ padding: "16px 24px 24px" }}>
+        <div className="shine-style-0228">
           <Btn full onClick={() => ctx.go("wardrobe-source")}>
             Образ — {sits.find((s) => s.id === selected)?.l}
           </Btn>

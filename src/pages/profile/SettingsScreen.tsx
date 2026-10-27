@@ -17,97 +17,55 @@ export default function SettingsScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        background: "#0D0D0D",
-      }}
+      className="shine-style-0266"
     >
       <StatusBar />
       <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          padding: "4px 24px 12px",
-        }}
+        className="shine-style-0267"
       >
         <BackBtn onClick={() => ctx.back()} />
         <div
-          style={{
-            fontFamily: "'Playfair Display', serif",
-            fontSize: 22,
-            fontWeight: 400,
-            color: "#F3F0E9",
-          }}
+          className="shine-style-0268"
         >
           Настройки
         </div>
       </div>
       <Divider />
       <div
-        style={{ flex: 1, overflowY: "auto", padding: "0 24px" }}
-        className="scrollbar-hide"
+        
+        className="scrollbar-hide shine-style-0269"
       >
         {items.map((item, i) => (
           <button
             key={i}
-            style={{
-              width: "100%",
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              padding: "18px 0",
-              borderBottom: "1px solid #1E1E1E",
-              background: "transparent",
-              cursor: "pointer",
-              textAlign: "left",
-            }}
+            className="shine-style-0270"
           >
             <div>
               <div
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  fontSize: 15,
-                  color: "#F3F0E9",
-                }}
+                className="shine-style-0271"
               >
                 {item.l}
               </div>
               {item.s && (
                 <div
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontSize: 12,
-                    color: "#5A5855",
-                    marginTop: 2,
-                  }}
+                  className="shine-style-0272"
                 >
                   {item.s}
                 </div>
               )}
             </div>
-            <div style={{ color: "#3D3D3B" }}>
+            <div className="shine-style-0273">
               <I.ChevronRight />
             </div>
           </button>
         ))}
-        <div style={{ paddingTop: 32, paddingBottom: 24 }}>
+        <div className="shine-style-0274">
           <button
             onClick={() => {
               ctx.setAuth(false);
               ctx.go("welcome");
             }}
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 14,
-              color: "#6B1F2B",
-              letterSpacing: "0.04em",
-              background: "transparent",
-              border: "none",
-              cursor: "pointer",
-            }}
+            className="shine-style-0275"
           >
             Выйти из аккаунта
           </button>

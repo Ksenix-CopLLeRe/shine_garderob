@@ -20,65 +20,26 @@ export default function OutfitLoadingScreen() {
 
   return (
     <div
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "#0D0D0D",
-        padding: "0 40px",
-      }}
+      className="shine-style-0166"
     >
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          gap: 36,
-        }}
+        className="shine-style-0167"
       >
         <div
-          style={{
-            width: 60,
-            height: 1,
-            background: "#252525",
-            position: "relative",
-            overflow: "hidden",
-          }}
+          className="shine-style-0168"
         >
           <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "40%",
-              height: "100%",
-              background: "#F3F0E9",
-              animation: "slideLoader 1.5s ease-in-out infinite",
-            }}
+            className="shine-style-0169"
           />
         </div>
-        <div style={{ textAlign: "center" }}>
+        <div className="shine-style-0170">
           <div
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: 22,
-              fontStyle: "italic",
-              color: "#F3F0E9",
-              lineHeight: 1.4,
-              marginBottom: 8,
-            }}
+            className="shine-style-0171"
           >
             {steps[step]}
           </div>
           <div
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              fontSize: 12,
-              color: "#5A5855",
-              letterSpacing: "0.05em",
-            }}
+            className="shine-style-0172"
           >
             Учитываем погоду и предпочтения
           </div>
